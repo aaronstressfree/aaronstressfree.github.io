@@ -1,7 +1,7 @@
 .title {
     font-size: 64px;
     color: #000000;
-    font-weight: normal;
+    font-weight: bold;
     font-family: 'Roboto Slab', serif;
     align-items: center;
     text-align: center;
@@ -10,7 +10,7 @@
 .body {
     font-size: 24px;
     color: #666666;
-    font-weight: lighter;
+    font-weight: thin;
     padding-bottom: 60px;
     font-family: 'Roboto Slab', serif;
     align-items: center;
