@@ -29,6 +29,12 @@ ul {
 /*    text-align: center;
 */  }
 
+a {
+  color: #4658E8;
+  text-decoration: none;
+  padding-top: 40px;
+}
+
 body {
   background: #f1f1f1;
 }
