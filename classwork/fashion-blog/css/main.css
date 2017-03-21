@@ -1,6 +1,5 @@
 /*---------------------------GENERAL---------------------------------*/
 
-
 .container{
     max-width: 720px;
     padding: 54px;
@@ -43,11 +42,12 @@ ul{
     color: #c1c1c1;
     font-size: 20px;
     border-style: solid;
-    border-bottom: 2px solid #c1c1c1;
+    border-bottom: 2px solid #ffffff;
     border-top:hidden;
     border-left:hidden;
     border-right:hidden;
     text-decoration: none;
+
  }
 
 #navPadding{
@@ -69,7 +69,7 @@ a:hover{
     font-size: 35px;
     font-weight:100;
     color: #cccccc;
-    padding: 20px 0px 20px 0px
+    padding: 20px 0px 30px 0px
 }
 
 .articleHeader{
@@ -113,6 +113,9 @@ hr.line{
     padding-bottom: 40px;
     padding-top: 10px;
 }
+
+/*-----------------------------BOTTOM NAV-------------------------------*/
+
 
 .bottomNav{
     text-decoration: none;
