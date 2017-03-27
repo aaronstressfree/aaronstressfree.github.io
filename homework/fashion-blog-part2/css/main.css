@@ -56,6 +56,26 @@ hr.sideBar{
     margin:0;
 }
 
+.sideTitle{
+    font-size: 20px;
+    font-weight: bold;
+    color: #666666;
+    padding: 15px 0px 15px 0px;
+}
+
+#sideTitlePadding{
+    padding: 50px 0px 0px 0px;
+}
+
+.bulletPadding{
+    padding-left: 40px;
+    color: #666666;
+}
+
+.bulletList{
+    color: #aa0000;
+    line-height: 24px;
+}
 /*-------------------------NAV---------------------*/
 nav{
     width: 100%;
@@ -179,25 +199,4 @@ hr.line{
     color: #c1c1c1;
 }
 
-/*-----------------------------SIDEBAR-------------------------------*/
 
-.sideTitle{
-    font-size: 20px;
-    font-weight: bold;
-    color: #666666;
-    padding: 15px 0px 15px 0px;
-}
-
-#sideTitlePadding{
-    padding: 50px 0px 0px 0px;
-}
-
-.bulletPadding{
-    padding-left: 40px;
-    color: #666666;
-}
-
-.bulletList{
-    color: #aa0000;
-    line-height: 24px;
-}
