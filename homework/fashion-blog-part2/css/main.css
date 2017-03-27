@@ -27,8 +27,7 @@ h2{
     font-weight: 100;
     size: 24px;
     float: left;
-    padding-top: 28px;
-    padding-left: 20px;
+    padding: 28px 0px 0px 20px;
     color: #939393;
 }
 
@@ -40,8 +39,7 @@ main{
 
 aside{
     width: 280px;
-/*    background-color: #c1c1c1;
-*/    float: right;
+    float: right;
 }
 
 .sideTitle{
@@ -67,12 +65,12 @@ nav{
     color: #d3d3d3;
     font-size: 20px;
     border-style: solid;
-    border-bottom: 2px solid #151515;
+    border-bottom: 4px solid #151515;
     border-top:hidden;
     border-left:hidden;
     border-right:hidden;
     text-decoration: none;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
     background-color: #151515;
     padding: 20px 48px 20px 48px;
 
@@ -89,8 +87,7 @@ a:hover{
 
 
 li{
-/*    display: inline;
-*/    padding-right: 15px;
+    padding-right: 15px;
 }
 
 ul{
