@@ -1,0 +1,40 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.box {
+  height: 150px;
+}
+
+
+header {
+  background: red;
+  color: white;
+}
+
+main {
+  background: yellow;
+   float: left;
+   width: 500px;
+}
+
+aside {
+  background: green;
+   float: right;
+   width: 250px;
+   color: white;
+}
+
+footer {
+  background: blue;
+  float: none;
+  color: white;
+}
+
+/*Recognize the float property*/
+.clear {
+  clear: both;
+}
+
+
