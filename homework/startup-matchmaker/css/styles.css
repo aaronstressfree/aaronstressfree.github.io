@@ -1,0 +1,120 @@
+/* FONT FAMILY HELPERS :)
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Merriweather', serif;
+// font-family: 'Source Sans Pro', sans-serif;
+*/
+/*------------------GLOBAL------------------*/
+
+.clear{
+    clear: both;
+}
+
+.clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.container{
+    padding: 0px 40px 0px 40px;
+}
+
+/*------------------TOPBAR------------------*/
+body{
+    max-width: 960px;
+
+}
+
+.topBar{
+background-color: black;
+padding:20px 40px 40px 40px;
+border-bottom: solid;
+border-width: 3px;
+border-color: yellow;
+}
+
+.pageTitle{
+    color: yellow;
+    float: left;
+    font-family: 'Merriweather', serif;
+}
+
+.topNav{
+    float: right;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px 10px 0px 10px;
+    text-decoration: none;
+}
+/*------------------TOPBANNER------------------*/
+
+.topBanner{
+    background-color: #d1d1d1;
+    width: 960px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    padding: 20px 0px 20px 0px;
+    font-size: 20px;
+}
+
+#greyWord{
+    text-decoration: line-through;
+    color: #666666;
+}
+
+#yellowUnderline{
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: yellow;
+}
+/*------------------HEROMODULE------------------*/
+
+.pictureBanner{
+    background: url(../img/coworking.jpg) no-repeat center left;
+    width: 960px;
+    height: 400px;
+    background-size: cover;
+}
+
+.pictureStyle{
+
+}
+
+.overlayModal{
+    background-color: rgba(255,255,255, 0.8);
+    float: right;
+    width: 300px;
+    height: 200px;
+    margin: 50px 30px 0px 0px;
+}
+
+#modalTitle{
+    font-size: 20px;
+}
+.modalText{
+    padding: 40px 20px 40px 20px;
+    line-height: 22px;
+}
+
+/*------------------TYPTIC------------------*/
+
+.tryptic{
+    height: 400px;
+    background-color: #d3d3d3;
+    text-align: left;
+}
+
+.trypticOne{
+    float: left;
+    width: 293px;
+    display: inline;
+}
+
+.trypticTwo{
+    width: 293px;
+    margin: 0px 0px 0px 320px;
+}
+
+.trypticThree{
+    float: right;
+    width: 293px;
+}
