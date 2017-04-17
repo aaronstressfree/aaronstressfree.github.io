@@ -1,0 +1,47 @@
+.container{
+    margin: auto;
+    width: 500px;
+}
+
+.farBox{
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 100px 0px 20px 0px;
+}
+
+.celBox{
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+
+.boxTitle{
+    font-size: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.textBox{
+    width: 60px;
+    height: 20px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+    font-size: 16px;
+    text-align: center;
+}
+
+.textBox:focus{
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
