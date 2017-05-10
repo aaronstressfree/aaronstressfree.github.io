@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Beats Per Minute</title>
+    <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body class="container">
@@ -27,7 +28,7 @@
 
         <div id="area_5">
             <div class="sun">
-                <div class="ray_box" class="absolute-center">
+                <div id="ray_box" class="absolute-center">
                     <div class="ray ray1"></div>
                     <div class="ray ray2"></div>
                     <div class="ray ray3"></div>
@@ -41,30 +42,33 @@
                 </div>
             </div>
             <div id="animation_5" class="absolute-center"></div>
+            <div id="animation_5-1" class="absolute-center"></div>
         </div>
 
 
         <div id="area_6">
-            <div id="animation_6">
-            </div>
+            <div id="animation_6"></div>
+            <div id="animation_6-1"></div>
+            <div id="animation_6-2"></div>
+            <div id="animation_6-3"></div>
         </div>
 
-        <div id="area_7">
+        <div id="area_7" class="shake-slow" class="shake-opacity">
             <div id="animation_7">
             </div>
         </div>
 
-        <div id="area_8">
+        <div id="area_8" class="shake-hard">
             <div id="animation_8">
             </div>
         </div>
 
-        <div id="area_9">
+        <div id="area_9" class="shake-hard">
             <div id="animation_9">
             </div>
         </div>
 
-        <div id="area_10">
+        <div id="area_10" class="shake-crazy">
             <div id="animation_10">
             </div>
         </div>
@@ -72,6 +76,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
     <script src="js/sound.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.1/csshake-crazy.css"></script>
 
     <script src="js/script.js"></script>
 
