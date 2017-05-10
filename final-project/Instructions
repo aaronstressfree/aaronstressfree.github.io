@@ -1,0 +1,31 @@
+Instructions
+
+/ add in real content
+/
+/ make cool animation strategy for tracks
+/ make way to filter by BPM or otherwise
+    Use jquery to change grid-row or flex?
+/ On mobile make horizontal
+/ click for more info on genre (API?)
+/cycle through songs?
+
+
+web audio api
+
+
+TEMPO
+70 dubstep
+100 triphop
+115 hiphop
+120 concert march
+130 house
+140/70 dubstep (benga)
+150 hardstyle
+160 Juke/footwork
+170 old school jungle
+180 Thrash metal
+300 Speedcore
+
+??
+afrobeat
+ska

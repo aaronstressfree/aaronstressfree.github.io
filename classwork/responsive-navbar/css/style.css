@@ -1,0 +1,66 @@
+/*DESKTOP*/
+
+.container {
+	margin: 0 auto;
+	width: 85%;
+}
+
+header {
+	background-color: black;
+	overflow: hidden;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+header h1 {
+	font-size: 35px;
+	float: left;
+	color: white;
+}
+
+header nav {
+	float: right;
+	margin-top: 8px;
+}
+
+header nav a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+#burger{
+	display: none;
+}
+
+#mobile-nav{
+	display: none;
+}
+
+/*MOBILE*/
+
+@media (max-width: 1500px){
+	#burger{
+		display: block;
+		float: right;
+		margin-top: 5px;
+		cursor:pointer;
+	}
+	#large-nav{
+		display:none;
+	}
+	#mobile-nav a{
+		display: block;
+		text-align: center;
+		padding: 15px 0px 15px 0px;
+		text-decoration: none;
+		color: orange;
+		border-bottom: 1px solid #e1e1e1;
+		font-size: 20px;
+	}
+	#mobile-nav{
+		display: none;
+	}
+}

@@ -1,0 +1,32 @@
+#area_1{
+
+}
+
+#area_1:hover{
+    background-color: yellow;
+
+}
+
+#area_2{
+
+}
+
+#area_2:hover{
+    background-color: green;
+}
+
+#area_3{
+
+}
+
+#area_3:hover{
+    background-color: orange;
+}
+
+.musicArea{
+    display: inline-block;
+/*    margin: 0px 0px 0px 0px;*/
+    width: 33%;
+    height: 1000px;
+}
+
