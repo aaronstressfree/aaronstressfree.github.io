@@ -492,6 +492,26 @@
     background-color: #FF9F00;
 }
 
+#animation_8{
+    width: 200px;
+    height: 200px;
+    border: 1px hidden;
+    border-radius: 100px;
+    background-color: rgba(255,255,255,1);
+    animation: 0;
+    animation-fill-mode: both;
+    display: inline-block;
+    position: absolute;
+    filter:blur(40px);
+    visibility: hidden;
+}
+
+#area_8:hover > #animation_8{
+    visibility:visible;
+    animation: growCircle 8s infinite ease-in-out;
+    animation-direction: alternate;
+
+}
 /*AREA 9------------------------- */
 #area_9{
     grid-column: 1;
@@ -502,6 +522,7 @@
 
 #area_9:hover{
     animation: colorchange .5s infinite ease-in-out;
+    filter: blur(20px);
 }
 
 #animation_9{
@@ -524,8 +545,17 @@
     background-color: black;
 }
 
-.musicArea{
+#animation_10{
+    background-color: red;
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    visibility: hidden;
+    filter: blur(90px);
+}
 
+#area_10:hover > #animation_10{
+    visibility:visible;
 }
 
 /*Animations-------------------------*/
@@ -646,3 +676,7 @@
       100% {background: red;}
     }
 
+@keyframes growCircle{
+    0%{transform: scale(0); opacity: 0;}
+    100%{transform: scale(3.5); opacity: 1}
+}

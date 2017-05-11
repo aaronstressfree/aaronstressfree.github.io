@@ -56,10 +56,10 @@ $('#area_7').mouseout(function(){
 })
 
 //AREA 8
-$('#area_8').hover(function(){
+$('#area_8, #animation_8').hover(function(){
     $.playSound('./audio/8- DJ Rashad+DJ Manny - R House.wav')
 })
-$('#area_8').mouseout(function(){
+$('#area_8, #animation_8').mouseout(function(){
     $.stopSound();
 })
 
@@ -72,10 +72,10 @@ $('#area_9').mouseout(function(){
 })
 
 //AREA 10
-$('#area_10').hover(function(){
+$('#area_10, #animation_10').hover(function(){
     $.playSound('./audio/10- Scorched- Spawn of Possession.wav')
 })
-$('#area_10').mouseout(function(){
+$('#area_10, #animation_10').mouseout(function(){
     $.stopSound();
 })
 
