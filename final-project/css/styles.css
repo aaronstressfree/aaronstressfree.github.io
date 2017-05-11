@@ -368,12 +368,12 @@
 
 #area_5:hover > #animation_5{
     visibility:visible;
-    animation: upDown_1 .8s infinite ease-in;
+    animation: upDown_1 .9s infinite ease-in;
 }
 
 #area_5:hover > #animation_5-1{
     visibility:visible;
-    animation: upDown_2 .8s infinite ease-in;
+    animation: upDown_2 .9s infinite ease-in;
 }
 
 /*AREA 6-------------------------*/
@@ -678,5 +678,5 @@
 
 @keyframes growCircle{
     0%{transform: scale(0); opacity: 0;}
-    100%{transform: scale(3.5); opacity: 1}
+    100%{transform: scale(5); opacity: 1}
 }
