@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="storybook-version" content="3.2.17">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>Decision Packages - Add Decision Point</title>
+ <script src="jquery-3.3.1.js"></script>     
+	<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+<link href="bootstrap.css" rel="stylesheet" type="text/css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	
+	<link href="newStack.css" rel="stylesheet" type="text/css">
+	<link href="customPrototype.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="top-toolbar">
+  <div class="app-menu"><span class="app-menu-title">APP MENU</span><img src="menuIcon.png" alt=""/></div>
+	<div class="account-info"><span>MTA</span><span>Account</span><span>Support</span><span><img src="profile.png"  alt=""/>Profile</span></div>
+</div>
+	<div class="main-toolbar">
+		<span class="app-title"><a href="index.html"><img src="OG-logo.png" alt=""/>DECISION PACKAGES</a></span>
+		<span class="menu-link">
+			<a href="index.html" class="selected">Document Management</a>
+		    <a href="checklist.html">Final Decision CheckList</a>
+		</span>
+	
+	
+	</div>
+	
+	<div class="breadcrumbs"><-- Back to <a href="#">Budget Builder</a> | You are in <a href="index.html">Decision Packages</a> /  <a href="edit.html">FREDERICKSBURG DISTRICT</a> / Add Decision Point</div>
+	
+	<!-- MAST section Code goes Here -->
+	<div class="mast">
+		<h1 class="font-weight-bold">Add Decision Point</h1>
+	</div>
+	
+	<!-- TABS section Code goes Here -->
+	<div class="tabs">
+		
+	</div>
+	
+	
+	<!-- FILTERS section Code goes Here -->
+	<div class="filters">
+		
+	</div>
+	
+	
+		<!-- PRIMARY CONTENT section Code goes Here -->
+	<div class="primary-content">
+		<div class="col-lg-12">
+			<div class="dashboard-tile">
+			
+			<div class="form-group">
+		
+			<div class="col-lg-9">		
+  <label for="usr">Decision Point Title*</label>
+  <input type="text" class="form-control" id="usr">
+	<div class="spacer-10"></div>
+				<div class="spacer-10"></div>
+		
+    
+	
+
+	
+				</div>
+				<div class="col-lg-3">
+					<div class="spacer-10"></div>
+					<div class="spacer-10"></div>
+					<div class="spacer-10"></div>
+				<a class="btn btn-large btn-default" href="edit.html">Cancel</a>
+							<a class="btn  btn-large btn-primary" href="edit.html">Save Decision Point</a>
+							
+				</div>
+</div>
+				<div class="spacer-10"></div>
+				</div>
+		</div>
+		
+		<div class="spacer-10"></div>
+		<div class="col-lg-12">
+			 
+			<div class="dashboard-tile">
+				<div class="col-lg-12">
+				<label for="dynamic_select">Associated Proposals <span class="label-info-text">(check all that apply)</span></label>
+				<div class="spacer-10"></div>
+					<div class="form-check">
+			<div class="col-md-6">
+    <input type="checkbox" class="form-check-input" id="checkbox100" checked="checked">
+    <label class="form-check-label" for="checkbox100">RTE 709 - FLATFORD ROAD SIDEWALK</label>
+				</div>
+			<div class="col-md-6">
+    <input type="checkbox" class="form-check-input" id="checkbox100" >
+    <label class="form-check-label" for="checkbox100">	 CONST. OF SIDEWALKS, INSTALLATION OF SIGNAGE & BUS STOPS</label>		
+				</div>
+			<div class="col-md-6">
+	<input type="checkbox" class="form-check-input" id="checkbox100"  checked="checked">
+    <label class="form-check-label" for="checkbox100"> TOWN OF WARSAW SIDEWALKS</label>
+					</div>
+			<div class="col-md-6">
+	<input type="checkbox" class="form-check-input" id="checkbox100" >
+    <label class="form-check-label" for="checkbox100">MINE ROAD SIDEWALK</label>
+				</div>
+					
+					</div>
+					
+				</div>
+				<div class="spacer-10"></div>
+</div>
+		</div>
+		</div>
+		<div class="spacer-10"></div>
+		<div class="col-lg-12">
+			<div class="dashboard-tile">
+			<label>BACKGROUND</label>
+				<!-- Create the editor container -->
+<div id="background-editor">
+ 
+</div>
+	<div class="spacer-10"></div>	
+				<div class="spacer-10"></div>
+				<label>ANALYSIS</label>
+				<div id="analysis-editor">
+ 
+</div>
+	<div class="spacer-10"></div>			
+			<div class="spacer-10"></div>	
+				<label>RECOMMENDATIONS</label>
+				<div id="recommendation-editor">
+ 
+</div>
+				</div>
+		</div>
+		</div>
+		
+		</div>
+		<div class="spacer-10"></div>
+		
+	</div>
+	<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<!-- Initialize Quill editor -->
+<script>
+  var quill = new Quill('#background-editor', {
+    theme: 'snow'
+  });
+	var quill = new Quill('#analysis-editor', {
+    theme: 'snow'
+  });
+	
+	var quill = new Quill('#recommendation-editor', {
+    theme: 'snow'
+  });
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="storybook-version" content="3.2.17">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>Decsion Packages - Edit Decision Package</title>
+ <script src="jquery-3.3.1.js"></script>      
+<link href="bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	
+	<link href="newStack.css" rel="stylesheet" type="text/css">
+	<link href="customPrototype.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="top-toolbar">
+  <div class="app-menu"><span class="app-menu-title">APP MENU</span><img src="menuIcon.png" alt=""/></div>
+	<div class="account-info"><span>Virginia DOT</span><span>Account</span><span>Support</span><span><img src="profile.png"  alt=""/>Profile</span></div>
+</div>
+	<div class="main-toolbar">
+		<span class="app-title"><a href="index.html"><img src="OG-logo.png" alt=""/>DECISION PACKAGES</a></span>
+		<span class="menu-link">
+			<a href="index.html">Document Management</a>
+		    <a href="checklist.html"  class="selected">Final Decision CheckList</a>
+		</span>
+	
+	
+	</div>
+	
+	<div class="breadcrumbs"><-- Back to <a href="#">Budget Builder</a> | You are in <a href="index.html">Decision Packages</a> / Final Decision Checklist</div>
+	
+	<!-- MAST section Code goes Here -->
+	<div class="mast">
+		<h1 class="font-weight-bold">Document Management</h1>
+	</div>
+	
+	<!-- TABS section Code goes Here -->
+	<div class="tabs">
+		
+	</div>
+	
+	
+	<!-- FILTERS section Code goes Here -->
+	<div class="filters">
+		
+	</div>
+	
+	
+	<!-- PRIMARY CONTENT section Code goes Here -->
+	<div class="primary-content">
+		<div class="col-lg-12">
+			<div class="dashboard-tile">
+			
+			<h3 class="dashboard-tile-title-1">CHECKLIST CODE HERE</h3>
+				
+				</div>
+		</div>
+		</div>
+		<div class="spacer-10"></div>
+		
+	</div>
+	
+	<script>
+    $(function(){
+      // bind change event to select
+      $('#dynamic_select').on('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              window.location = url; // redirect
+          }
+          return false;
+      });
+    });
+</script>
+</body>
+</html>

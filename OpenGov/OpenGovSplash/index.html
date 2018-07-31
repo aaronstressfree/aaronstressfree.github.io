@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="storybook-version" content="3.2.17">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+<title>Budget Builder Home</title>
+ <script src="jquery-3.3.1.js"></script>    
+	   <!--C3 Chart-->
+
+<script type="text/javascript" src="d3.v3.min.js"></script>
+
+<script type="text/javascript" src="c3.js"></script>
+
+<link href="bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link href="c3.css" rel="stylesheet" type="text/css" />
+
+	<link href="newStack.css" rel="stylesheet" type="text/css">
+	<link href="customPrototype.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="top-toolbar">
+  <div class="app-menu"><span class="app-menu-title">APP MENU</span><img src="menuIcon.png" alt=""/></div>
+	<div class="account-info"><span>Redwood City</span><span>Account</span><span>Support</span><span><img src="profile.png"  alt=""/>Profile</span></div>
+</div>
+	<div class="main-toolbar">
+		<span class="app-title"><img src="OG-logo.png" alt=""/>BUDGET BUILDER</span>
+		<span class="menu-link">
+			<a href="index.html" class="selected">Overview</a>
+			<a href="index.html" >Proposals</a>
+			<a href="index.html" >Workforce</a>
+			<a href="index.html" >Performance</a>
+			<a href="index.html" >Strategic Initiatives</a>
+			<a href="index.html" >Reports</a>
+			<a href="index.html" >Decision Packages</a>
+			<a href="index.html" >Publications</a>
+		  
+		</span>
+	
+	
+	</div>
+	<div class="spacer-10"></div>
+	<div class="spacer-10"></div>
+	<!-- MAST section Code goes Here -->
+	<div class="mast" >
+		<div class="col-lg-4">
+		<h1 class="font-weight-bold">BUDGET OVERVIEW</h1>
+		</div>
+		<div class="col-lg-2">
+		 <label for="dynamic_select"> DEPARTMENT</label>
+    <select class="form-control" id="dynamic_select">
+      <option value="index.html">Fire</option>
+		 <option value="FY18.html">HHS</option>
+      <option value="FY18.html">Police</option>
+		 <option value="FY18.html">Public Works</option>
+    </select>
+		</div>
+		<div class="col-lg-2">
+		 <label for="dynamic_select"> FUND</label>
+    <select class="form-control" id="dynamic_select">
+      <option value="index.html">All Funds</option>
+		 <option value="FY18.html">General Fund</option>
+      <option value="FY18.html">Grant Fund</option>
+		
+    </select>
+		</div>
+		<div class="col-lg-2">
+		 <label for="dynamic_select"> YEAR</label>
+    <select class="form-control" id="dynamic_select">
+      <option value="index.html">FY20</option>
+		 <option value="FY18.html">FY19</option>
+      <option value="FY18.html">FY18</option>
+		
+    </select>
+		</div>
+		<div class="col-lg-2">
+		 <label for="dynamic_select"> VERSION</label>
+    <select class="form-control" id="dynamic_select">
+      <option value="index.html">Adopted</option>
+		 <option value="FY18.html">Recommended</option>
+      <option value="FY18.html">Department Submission</option>
+		<option value="FY18.html">Base - Initial</option>
+    </select>
+		</div>
+		<div class="spacer-10"></div>
+	</div>
+	
+	<!-- TABS section Code goes Here -->
+	<div class="tabs">
+		
+	</div>
+	
+	
+	<!-- FILTERS section Code goes Here -->
+	<div class="filters">
+		
+	</div>
+	
+<div class="spacer-10"></div>
+	<!-- PRIMARY CONTENT section Code goes Here -->
+	<div class="primary-content">
+		<div class="col-lg-8">
+			<h3>Fire Department - Budget vs Actuals <span class="small-text">(all funds)</span> </h3>
+				<div class="spacer-10"></div>
+			<div class="dashboard-tile">
+				<a href="mailto:zbookman@opengov.com?subject=Budget%20To%20Actuals%20Notification&body=Warning!!! Projections indicate expenditures will be $39M over budget at year end" class="btn btn-default" style="float:right"><img src="SVGs/email-1.svg" alt=""/>notify</a>
+				<div class="spacer-10"></div>
+				<table>
+				<tr>
+					<td><p class="large-text"><span class="warning">WARNING!!!</span></p></td>	
+				<td style="padding-left:15px"><p class="large-text">Projections indicate <strong>FIRE EXPENSES</strong> will be <strong class="super-large-text highlight-text">$39M</strong> over budget at year end. Our elected officials are <strong> NOT</strong> going to be happy! Expect a visit from the budget director in the morning.</p></td>
+				</tr>
+				</table>
+			
+				<div class='chart c3-whiteBackground'>
+<div id='chart'></div>
+</div>
+			
+				<div class="spacer-10"></div>
+				
+		</div>
+			<div class="spacer-10"></div>
+			<div class="spacer-10"></div>
+			<h3>Fire Department Fund Balance </h3>
+				<div class="spacer-10"></div>
+		  <div class="dashboard-tile">
+				<a href="mailto:zbookman@opengov.com?subject=Budget%20Task%20Status&body=Please see the list below for budget tasks and their status" class="btn btn-default" style="float:right"><img src="SVGs/email-1.svg" alt=""/>notify</a>
+			<div class="spacer-10"></div>
+			  <div class="col-lg-4">
+		  	<div class='chart c3-whiteBackground blue-background'>
+<div id='piechart'></div>
+</div>
+			  </div>
+			  <div class="col-lg-8">
+				  <div class="spacer-10"></div>
+				  <table>
+				<tr>
+					<td><p class="large-text"><span class="warning">WARNING!!!</span></p></td>	
+				<td style="padding-left:15px"><p class="large-text">Projections indicate <strong>FIRE FUNDS</strong> will run out by the end of <strong class="highlight-text">QUARTER 3</strong>. </p></td>
+				</tr>
+				</table>
+				  <div class="spacer-10"></div>
+			  <table class="table table-striped table-hover table-bordered table-condensed cf largeFont noWrapHeader dataTable" id="editable-sample" aria-describedby="editable-sample_info"><thead><tr role="row">
+			    <th id="noSort" class="sorting" role="columnheader" tabindex="0" aria-controls="editable-sample" rowspan="1" colspan="1" aria-label="Title: activate to sort column ascending" style="width: 446px;"><span style="display:none">Title</span>FUND</th>
+			    <th class="sorting" role="columnheader" tabindex="0" aria-controls="editable-sample" rowspan="1" colspan="1" aria-label="ACTUAL FY17: activate to sort column ascending" style="width: 129px;">ACTUAL FY18</th>
+			    <th class="sorting" role="columnheader" tabindex="0" aria-controls="editable-sample" rowspan="1" colspan="1" aria-label="BUDGET FY18: activate to sort column ascending" style="width: 129px;">BUDGET FY19</th>
+			    <th class="sorting" role="columnheader" tabindex="0" aria-controls="editable-sample" rowspan="1" colspan="1" aria-label="APPR FY19: activate to sort column ascending" style="width: 113px;"> REM FY19</th><th class="sorting" role="columnheader" tabindex="0" aria-controls="editable-sample" rowspan="1" colspan="1" aria-label="% CHG BUD/APPR: activate to sort column ascending" style="width: 164px;">% REM</th></tr></thead><tbody role="alert" aria-live="polite" aria-relevant="all"><tr class="underlineTD even"><td style="text-align:left !important;" class="noDataTitle TitleLeftPadding ">Redwood City  Government General Fund</td>
+			      <td data-title="ACTUAL FY17" class="currencyField ">$3,601,657</td>
+			      <td data-title="BUDGET FY18" class="currencyField ">$4,938,817</td>
+			      <td data-title="APPR FY19" class="currencyField ">$3,002,173</td>
+			      <td data-title="% CHG BUD/APPR" class="percentageField " style="color: rgb(0, 0, 0);">62.3%</td></tr><tr class="underlineTD odd">
+			        <td style="text-align:left !important;" class="noDataTitle TitleLeftPadding ">Redwood City  Fire Fund</td>
+			        <td data-title="ACTUAL FY17" class="currencyField ">$100,490,723</td>
+			        <td data-title="BUDGET FY18" class="currencyField ">$100,655,562</td>
+			        <td data-title="APPR FY19" class="currencyField ">$64,076,437</td>
+			        <td data-title="% CHG BUD/APPR" class="percentageField " style="color: rgb(0, 0, 0);">61.2%</td></tr></tbody></table>
+			  </div>
+			  <div class="spacer-10"></div>
+			</div>
+			<div class="spacer-10"></div>
+			<div class="spacer-10"></div>
+			<h3>Fire Department - Key Performance Indicators </h3>
+				<div class="spacer-10"></div>
+			<div class="dashboard-tile">
+				<a href="mailto:zbookman@opengov.com?subject=Budget%20To%20Actuals%20Notification&body=Warning!!! Projections indicate expenditures will be $39M over budget at year end" class="btn btn-default" style="float:right"><img src="SVGs/email-1.svg" alt=""/>notify</a>
+				<div class="spacer-10"></div>
+				
+			
+				<table class="table table-striped table-hover table-bordered  table-condensed cf largeFont dataTable" id="editable-sample" aria-describedby="editable-sample_info"><thead><tr role="row"><th style="text-align: left; width: 700px;" class="sorting" role="columnheader" tabindex="0" aria-controls="editable-sample" rowspan="1" colspan="1" aria-label="Program Performance Measures: activate to sort column ascending">Performance Measures</th><th style="text-align: right !important; width: 92px;" class="sorting" role="columnheader" tabindex="0" aria-controls="editable-sample" rowspan="1" colspan="1" aria-label="Actual FY16: activate to sort column ascending">Actual FY16</th><th style="text-align: right !important; width: 92px;" class="sorting" role="columnheader" tabindex="0" aria-controls="editable-sample" rowspan="1" colspan="1" aria-label="Actual FY17: activate to sort column ascending">Actual FY17</th><th style="text-align: right !important; width: 118px;" class="sorting" role="columnheader" tabindex="0" aria-controls="editable-sample" rowspan="1" colspan="1" aria-label="Estimated FY18: activate to sort column ascending">Estimated FY18</th><th style="text-align: right !important; width: 94px;" class="sorting" role="columnheader" tabindex="0" aria-controls="editable-sample" rowspan="1" colspan="1" aria-label="Target FY19: activate to sort column ascending">Target FY19</th><th style="text-align: right !important; width: 98px;" class="sorting_desc" role="columnheader" tabindex="0" aria-controls="editable-sample" rowspan="1" colspan="1" aria-sort="descending" aria-label="Target FY20 : activate to sort column ascending">Target FY20 </th></tr></thead><tbody role="alert" aria-live="polite" aria-relevant="all"><tr class="odd"><td data-title="Program Performance Measure" style="text-align:left !important" class=" ">90th percentile arrival time for first engine to structure fire in urban areas of the </td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">8:40</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">10:03</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">9:10</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">9:10</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">9:10</td></tr><tr class="even"><td data-title="Program Performance Measure" style="text-align:left !important" class=" ">90th percentile arrival time for first engine to structure fire in metropolitan areas of the </td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">9:09</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">9:11</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">9:00</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">9:00</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">9:00</td></tr><tr class="odd"><td data-title="Program Performance Measure" style="text-align:left !important" class=" ">EMS cardiac care: Percentage of STEMI patients with door-to-balloon (D2B) time less than or equal to 90 minutes</td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">93.9</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">92.3</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">91.2</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">91.2</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">91.2</td></tr><tr class="even"><td data-title="Program Performance Measure" style="text-align:left !important;" class=" ">EMS stroke care: Percentage of stroke patients with EMS to door (E2D) time less than or equal to 30 minutes <sup>2</sup></td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">85.9</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">83.9</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">90.0</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">90.0</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">90.0</td></tr><tr class="odd"><td data-title="Program Performance Measure" style="text-align:left !important" class=" ">Percent of residential structure fires confined to the room of origin</td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">79</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">80.5</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">81.0</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">81.0</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">81.0</td></tr><tr class="even"><td data-title="Program Performance Measure" style="text-align:left !important;" class=" ">EMS cardiac care: Percentage of cardiac arrest patients with return of spontaneous circulation (ROSC) <sup>1</sup></td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">31.2</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">32.7</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">34.2</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">34.2</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">34.2</td></tr><tr class="odd"><td data-title="Program Performance Measure" style="text-align:left !important;" class=" ">Number of residential fire injuries per 100,000 residents <sup>4</sup></td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">1.3</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">6.0</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">2.0</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">2.0</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">2.0</td></tr><tr class="even"><td data-title="Program Performance Measure" style="text-align:left !important" class=" ">90th percentile arrival time for first Advanced Life Support (ALS) unit in rural areas of the </td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">12:07</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">12:44</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">12:00</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">12:00</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">12:00</td></tr><tr class="odd"><td data-title="Program Performance Measure" style="text-align:left !important" class=" ">90th percentile arrival time for first engine to structure fire in rural areas of the </td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">12:00</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">13:02</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">12:00</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">12:00</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">12:00</td></tr><tr class="even"><td data-title="Program Performance Measure" style="text-align:left !important" class=" ">90th percentile arrival time for first Advanced Life Support (ALS) unit in suburban areas of the </td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">11:31</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">11:27</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">11:00</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">11:00</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">11:00</td></tr><tr class="odd"><td data-title="Program Performance Measure" style="text-align:left !important" class=" ">90th percentile arrival time for first Advanced Life Support (ALS) unit in metropolitan areas of the </td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">10:39</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">10:28</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">10:00</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">10:00</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">10:00</td></tr><tr class="even"><td data-title="Program Performance Measure" style="text-align:left !important" class=" ">90th percentile arrival time for first Advanced Life Support (ALS) unit in urban areas of the </td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">11:53</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">11:12</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">10:00</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">10:00</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">10:00</td></tr><tr class="odd"><td data-title="Program Performance Measure" style="text-align:left !important" class=" ">90th percentile arrival time for first engine to structure fire in suburban areas of the </td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">11:13</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">10:43</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">10:00</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">10:00</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">10:00</td></tr><tr class="even"><td data-title="Program Performance Measure" style="text-align:left !important;" class=" ">Number of residential fire deaths per 100,000 residents <sup>3</sup></td><td class="extraBold " data-title="Actual FY16" style="text-align:right !important">0.3</td><td class="extraBold " data-title="Actual FY17" style="text-align:right !important">0.9</td><td class="extraBold " data-title="Estimated FY18" style="text-align:right !important">0.4</td><td class="extraBold " data-title="Target FY19" style="text-align:right !important">0.4</td><td class="extraBold  sorting_1" data-title="Target FY20" style="text-align:right !important">0.4</td></tr></tbody></table>
+			
+				<div class="spacer-10"></div>
+				
+		</div>
+		</div>
+		
+		<div class="col-lg-4">
+			<h3>Budget Task Status </h3>
+				<div class="spacer-10"></div>
+		  <div class="dashboard-tile">
+				<a href="mailto:zbookman@opengov.com?subject=Budget%20Task%20Status&body=Please see the list below for budget tasks and their status" class="btn btn-default" style="float:right"><img src="SVGs/email-1.svg" alt=""/>notify</a>
+				<div class="spacer-10"></div>
+			<table class="table table-striped table-hover table-bordered  table-condensed cf largeFontList dataTable"><thead class="cf"><tr role="row"><th class="sorting" role="columnheader" tabindex="0"  rowspan="1" colspan="1" >Task</th><th style="text-align: right;" class="sorting" role="columnheader" tabindex="0"  rowspan="1" colspan="1" >Due Date</th><th style="white-space: nowrap; text-align: right !important; " class="sorting_desc" role="columnheader" tabindex="0"  rowspan="1" colspan="1" >% Complete</th><th class="hideMobileTD sorting" id="noSort" role="columnheader" tabindex="0"  rowspan="1" colspan="1"  ><span style="display:none">Graph of Total</span></th></tr></thead><tbody role="alert"><tr class="odd"><td class="mobileLink  "><a href="#">Proposals</a><br></td><td style="text-align:right; " data-title="Budget" class="currencyFieldM ">11/15/2018</td><td style="text-align: right !important; color: rgb(0, 0, 0);" data-title="% of Total" class="percentageField  sorting_1">92.5%</td><td class="hideMobileTD "><a class="plainLink" href="#"><progress id="progress1" value="92.500000" max="100"></progress></a></td></tr><tr class="odd"><td class="mobileLink  "><a href="#">Workforce</a><br></td><td style="text-align:right; " data-title="Budget" class="currencyFieldM ">11/15/2018</td><td style="text-align: right !important; color: rgb(0, 0, 0);" data-title="% of Total" class="percentageField  sorting_1">85%</td><td class="hideMobileTD "><a class="plainLink" href="#"><progress id="progress3" value="85.00000" max="100"></progress></a></td></tr><tr class="even"><td class="mobileLink  "><a href="#">Decision Packages</a><br></td><td style="text-align:right; " data-title="Budget" class="currencyFieldM ">12/20/2018</td><td style="text-align: right !important; color: rgb(0, 0, 0);" data-title="% of Total" class="percentageField  sorting_1">33%</td><td class="hideMobileTD "><a class="plainLink" href="#"><progress id="progress5" value="33.600000" max="100"></progress></a></td></tr><tr class="odd"><td class="mobileLink  "><a href="#">Quarterly Analysis</a><br></td><td style="text-align:right; " data-title="Budget" class="currencyFieldM ">12/15/2018</td><td style="text-align: right !important; color: rgb(0, 0, 0);" data-title="% of Total" class="percentageField  sorting_1">25%</td><td class="hideMobileTD "><a class="plainLink" href="#"><progress id="progress7" value="25.700000" max="100"></progress></a></td></tr><tr class="even"><td class="mobileLink  "><a href="#">Encumbrance Liquidation</a><br></td><td style="text-align:right; " data-title="Budget" class="currencyFieldM ">8/28/2018</td><td style="text-align: right !important; color: rgb(0, 0, 0);" data-title="% of Total" class="percentageField  sorting_1">15%</td><td class="hideMobileTD "><a class="plainLink" href="#"><progress id="progress9" value="15.700000" max="100"></progress></a></td></tr><tr class="odd"><td class="mobileLink  "><a href="#">Publication</a><br></td><td style="text-align:right; " data-title="Budget" class="currencyFieldM ">3/10/2018</td><td style="text-align: right !important; color: rgb(0, 0, 0);" data-title="% of Total" class="percentageField  sorting_1">10%</td><td class="hideMobileTD "><a class="plainLink" href="#"><progress id="progress12" value="10.700000" max="100"></progress></a></td></tr>
+				<tr class="odd"><td class="mobileLink  "><a href="#">Year End Training</a><br></td><td style="text-align:right; " data-title="Budget" class="currencyFieldM ">3/10/2018</td><td style="text-align: right !important; color: rgb(0, 0, 0);" data-title="% of Total" class="percentageField  sorting_1">0%</td><td class="hideMobileTD "><a class="plainLink" href="#"><progress id="progress12" value="00000" max="100"></progress></a></td></tr>
+				</tbody></table>
+				</div>
+			
+			<div class="spacer-10"></div>
+			<div class="spacer-10"></div>
+			<h3>Budget Proposal Comments </h3>
+				<div class="spacer-10"></div>
+		  <div class="dashboard-tile">
+				<a href="mailto:zbookman@opengov.com?subject=Budget%20Task%20Status&body=Please see the list below for budget tasks and their status" class="btn btn-default" style="float:right"><img src="SVGs/email-1.svg" alt=""/>notify</a>
+			<div class="spacer-10"></div>
+			    <p><a href="#">Fire Specialist Proposal</a> | 7/19/2019 10:35 am - <strong>Caitlin Steel</strong>  | I am beginning to think that you are not understanding the concept of money. No, it does not grow on trees Scott! Take this proposal OFF the table immediately. I am going to move you to our non emergency call center if you keep this up. </p>
+			  <p><a href="#">Fire Apparatus Proposal</a> | 7/19/2019 10:25 am - <strong>Caitlin Steel</strong>  | Are you crazy??? We can't ask for 2 new Fire Trucks. Take it down to 1 and hope the budget office doesn't take our heads off for spending 38% of our funds in the first quarter </p>
+			
+			  <p><a href="#">...more</a></p>
+			</div>
+			
+			<div class="spacer-10"></div>
+			<div class="spacer-10"></div>
+			<h3>Your Recent Activity </h3>
+				<div class="spacer-10"></div>
+		  <div class="dashboard-tile">
+				<a href="mailto:zbookman@opengov.com?subject=Budget%20Task%20Status&body=Please see the list below for budget tasks and their status" class="btn btn-default" style="float:right"><img src="SVGs/email-1.svg" alt=""/>notify</a>
+			<div class="spacer-10"></div>
+			  <p>7/19/2019 - <a href="#">Updated Expenses in the Fire Apparatus Proposal</a></p>
+			  <p>7/19/2019 - <a href="#">Added 5 new Positions in Fire Specialist Proposal</a></p>
+			  <p>7/18/2019 - <a href="#">Linked Safe Neighborhoods Strategic Initiative to Fire Admin Program</a></p>
+			  <p>7/14/2019 - <a href="#">Completed Department Head Review Meeting & Decision Package</a></p>
+			  <p>7/12/2019 - <a href="#">Updated Revenues in the Fire Apparatus Proposal</a></p>
+			  <p>7/10/2019 - <a href="#">Completed OMB Internal Review Meeting & Decision Package</a></p>
+			  <p><a href="#">...more</a></p>
+			</div>
+			
+		</div>
+		</div>
+		<div class="spacer-10"></div>
+		
+	</div>
+	
+	<script>
+    $(function(){
+      // bind change event to select
+      $('#dynamic_select').on('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              window.location = url; // redirect
+          }
+          return false;
+      });
+    });
+</script>
+	<script>
+		var ExpendCategories = ['1', '2', '3 (Q1)', '4', '5', '6 (Q2)', '7', '8', '9 (Q3)', '10', '11', '12 (Q4)'];
+		
+		//var ExpendName1 = 'FY19 Exp Act';
+        var ExpendName2 = 'FY19 Total Budget';
+        var ExpendName3 = 'FY19 Expenditure Actuals';
+         var ExpendName4 = 'FY19 Expenditure Projection';
+		
+	
+		
+	$(function () {
+
+        expendChart = c3.generate({
+            bindto: '#chart',
+            data: {
+                columns: [
+         
+            ['data1', 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105],
+            ['data2', 15, 29, 37, null, null,null,null,null,null,null,null,null ],
+            ['data3', null, null, 37, 44, 55, 67, 79, 89, 104, 114, 122, 144]
+        ],
+        classes: {
+    data1: 'smallCircle',
+	data2: 'smallCircle',
+	data3: 'smallCircle'
+  },
+                names: {
+                   
+                    data1: ExpendName2,
+                    data2: ExpendName3,
+                    data3: ExpendName4
+                },
+                types: {
+                   
+                    data1: 'line',
+                    data2: 'spline',
+                    data3: 'spline'
+                },
+              
+            },
+
+                     axis: {
+                x: {
+                 height: 70,
+                type: 'category',
+            categories: ExpendCategories,
+            label: {
+                text: 'Fiscal Periods',
+                position: 'outer-right'
+                // inner-right : default
+                // inner-center
+                // inner-left
+                // outer-right
+                // outer-center
+                // outer-left
+            },
+           
+        },
+        y: {
+            label: {
+                text: 'Total  ($ millions)',
+                position: 'outer-middle'
+                // inner-top : default
+                // inner-middle
+                // inner-bottom
+                // outer-top
+                // outer-middle
+                // outer-bottom
+            }
+        },
+            },
+    tooltip: {
+       format: {
+            title: function (d) { return 'Fiscal Period ' + ExpendCategories[d]; },
+            value: function (e) { return '$' + e + "M"; }
+            }
+        },
+            color: {
+                pattern: ['#000','#FCB322', '#c0504d', '#4d90fe',  '#FCB322', '#5cb85c', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5']
+            },
+            grid: {
+                x: {
+                    show: false
+                },
+                y: {
+                    show: true
+                }
+            }
+
+        });
+
+
+    });
+
+		
+		var piechart = c3.generate({
+ bindto: '#piechart',
+			data: {
+        columns: [
+            ['data1', 65],
+            ['data2', 105],
+        ],
+				names: {
+                   
+                    data1: "Used",
+                    data2: "Available"
+                },
+        type : 'donut',
+    },
+    donut: {
+        title: "Total Funds"
+    },
+			color: {
+                pattern: ['#1abc9c','#f1c40f', '#c0504d', '#4d90fe',  '#FCB322', '#5cb85c', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5']
+            },
+});
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>app-data</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="2.94902991e-15%" x2="50%" y2="97.4968112%" id="linearGradient-1">
+            <stop stop-color="#9A9DA1" offset="0%"></stop>
+            <stop stop-color="#6A6E73" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="app-data" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Data-Library" transform="translate(5.000000, 3.000000)" fill="url(#linearGradient-1)">
+            <g id="Page-1" transform="translate(0.000000, 0.746893)">
+                <polygon id="Fill-1" points="24.8684211 0.000276086862 0 12.8355543 0 39.6215016 24.8684211 52.4567798 49.7368421 39.6215016 45.4111184 37.3893393 24.8684211 47.9910748 3.39177632 36.9075678 3.39177632 32.4432432 24.8684211 43.5281307 49.7368421 30.6928525 45.4111184 28.4606902 24.8684211 39.0638062 3.39177632 27.9775382 3.39177632 23.5145941 24.8684211 34.5981012 49.7368421 21.762823 45.4111184 19.5320411 24.8684211 30.1337766 3.39177632 19.0502695 3.39177632 14.5845646 24.8684211 25.6708325 49.7368421 12.8355543"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

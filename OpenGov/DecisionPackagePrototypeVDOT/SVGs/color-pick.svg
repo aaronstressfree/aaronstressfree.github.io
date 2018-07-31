@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>color-pick</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="color-pick" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M18.25,33.75 C20.32,33.75 22,35.43 22,37.5 C22,40.99125 22.855,45 29.5,45 C31.57,45 33.25,46.68 33.25,48.75 C33.25,50.82 31.57,52.5 29.5,52.5 C20.10625,52.5 14.5,46.89375 14.5,37.5 C14.5,35.43 16.18,33.75 18.25,33.75 M29.5,0 C29.5,0 7,20.35875 7,37.5 C7,52.5 17.665,60 29.5,60 C41.335,60 52,52.5 52,37.5 C52,20.35875 29.5,0 29.5,0" id="Fill-1" fill="#000000"></path>
+    </g>
+</svg>

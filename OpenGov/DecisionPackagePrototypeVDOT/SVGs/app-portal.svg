@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>app-portal</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="app-portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M40.00125,52.5 L47.50125,52.5 L47.50125,41.25 L40.00125,41.25 L40.00125,52.5 Z M26.87625,52.5 L34.37625,52.5 L34.37625,41.25 L26.87625,41.25 L26.87625,52.5 Z M13.75125,52.5 L21.25125,52.5 L21.25125,41.25 L13.75125,41.25 L13.75125,52.5 Z M53.12625,52.5 L53.12625,41.25 L56.87625,41.25 L56.87625,33.75 L53.12625,33.75 C53.12625,22.605 45.015,13.37625 34.37625,11.5875 L34.37625,5.955 L31.56375,5.955 L31.56375,0 L29.68875,0 L29.68875,5.955 L26.87625,5.955 L26.87625,11.5875 C16.2375,13.37625 8.12625,22.605 8.12625,33.75 L4.37625,33.75 L4.37625,41.25 L8.12625,41.25 L8.12625,52.5 L0,52.5 L0,60 L60,60 L60,52.5 L53.12625,52.5 Z" id="Fill-1" fill="#131517"></path>
+    </g>
+</svg>
