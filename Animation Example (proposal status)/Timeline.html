@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+<title>Timeline</title>
+    <meta charset="utf-8">
+    <script>
+        function loadScripts(sources) {
+            sources.forEach(src => {
+                let script = document.createElement("script");
+                script.src = src;
+                script.async = false;
+                document.head.appendChild(script);
+            });
+        }
+        let commonFolderPath = "./FlowCommon"
+        let flowCommonScript = [`${commonFolderPath}/flowCommon.js`];
+        loadScripts(flowCommonScript)
+    </script>
+    <script>
+        function callback() {
+            console.log("I've been clicked!")
+        }
+        let timelineResourcesPath = ".";
+        let timelineScript = [`${timelineResourcesPath}/js/timelineToggleButton.js`];
+        loadScripts(timelineScript)
+    </script>
+</head>
+
+<body>
+    <timeline-button id="timelineButton" onclick="timelineButton.toggle(true)"></timeline-button>
+</body>
+
+</html>

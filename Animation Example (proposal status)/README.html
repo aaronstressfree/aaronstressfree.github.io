@@ -1,0 +1,2101 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Flow-Integrating an HTML Button</title>
+    <meta name="description" content="This is how you integrate an HTML Button into your site.">
+    <style>
+        body {
+                margin-bottom: 20rem;
+              }
+            .col,
+            .col-1,
+            .col-10,
+            .col-11,
+            .col-12,
+            .col-2,
+            .col-3,
+            .col-4,
+            .col-5,
+            .col-6,
+            .col-7,
+            .col-8,
+            .col-9,
+            .col-auto,
+            .col-lg,
+            .col-lg-1,
+            .col-lg-10,
+            .col-lg-11,
+            .col-lg-12,
+            .col-lg-2,
+            .col-lg-3,
+            .col-lg-4,
+            .col-lg-5,
+            .col-lg-6,
+            .col-lg-7,
+            .col-lg-8,
+            .col-lg-9,
+            .col-lg-auto,
+            .col-md,
+            .col-md-1,
+            .col-md-10,
+            .col-md-11,
+            .col-md-12,
+            .col-md-2,
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6,
+            .col-md-7,
+            .col-md-8,
+            .col-md-9,
+            .col-md-auto,
+            .col-sm,
+            .col-sm-1,
+            .col-sm-10,
+            .col-sm-11,
+            .col-sm-12,
+            .col-sm-2,
+            .col-sm-3,
+            .col-sm-4,
+            .col-sm-5,
+            .col-sm-6,
+            .col-sm-7,
+            .col-sm-8,
+            .col-sm-9,
+            .col-sm-auto,
+            .col-xl,
+            .col-xl-1,
+            .col-xl-10,
+            .col-xl-11,
+            .col-xl-12,
+            .col-xl-2,
+            .col-xl-3,
+            .col-xl-4,
+            .col-xl-5,
+            .col-xl-6,
+            .col-xl-7,
+            .col-xl-8,
+            .col-xl-9,
+            .col-xl-auto {
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px
+            }
+
+            .col {
+                -ms-flex-preferred-size: 0;
+                flex-basis: 0;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                max-width: 100%
+            }
+
+            .col-auto {
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                width: auto;
+                max-width: 100%
+            }
+
+            .col-1 {
+                -ms-flex: 0 0 8.333333%;
+                flex: 0 0 8.333333%;
+                max-width: 8.333333%
+            }
+
+            .col-2 {
+                -ms-flex: 0 0 16.666667%;
+                flex: 0 0 16.666667%;
+                max-width: 16.666667%
+            }
+
+            .col-3 {
+                -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+                max-width: 25%
+            }
+
+            .col-4 {
+                -ms-flex: 0 0 33.333333%;
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%
+            }
+
+            .col-5 {
+                -ms-flex: 0 0 41.666667%;
+                flex: 0 0 41.666667%;
+                max-width: 41.666667%
+            }
+
+            .col-6 {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%
+            }
+
+            .col-7 {
+                -ms-flex: 0 0 58.333333%;
+                flex: 0 0 58.333333%;
+                max-width: 58.333333%
+            }
+
+            .col-8 {
+                -ms-flex: 0 0 66.666667%;
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%
+            }
+
+            .col-9 {
+                -ms-flex: 0 0 75%;
+                flex: 0 0 75%;
+                max-width: 75%
+            }
+
+            .col-10 {
+                -ms-flex: 0 0 83.333333%;
+                flex: 0 0 83.333333%;
+                max-width: 83.333333%
+            }
+
+            .col-11 {
+                -ms-flex: 0 0 91.666667%;
+                flex: 0 0 91.666667%;
+                max-width: 91.666667%
+            }
+
+            .col-12 {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%
+            }
+
+            .order-first {
+                -ms-flex-order: -1;
+                order: -1
+            }
+
+            .order-last {
+                -ms-flex-order: 13;
+                order: 13
+            }
+
+            .order-0 {
+                -ms-flex-order: 0;
+                order: 0
+            }
+
+            .order-1 {
+                -ms-flex-order: 1;
+                order: 1
+            }
+
+            .order-2 {
+                -ms-flex-order: 2;
+                order: 2
+            }
+
+            .order-3 {
+                -ms-flex-order: 3;
+                order: 3
+            }
+
+            .order-4 {
+                -ms-flex-order: 4;
+                order: 4
+            }
+
+            .order-5 {
+                -ms-flex-order: 5;
+                order: 5
+            }
+
+            .order-6 {
+                -ms-flex-order: 6;
+                order: 6
+            }
+
+            .order-7 {
+                -ms-flex-order: 7;
+                order: 7
+            }
+
+            .order-8 {
+                -ms-flex-order: 8;
+                order: 8
+            }
+
+            .order-9 {
+                -ms-flex-order: 9;
+                order: 9
+            }
+
+            .order-10 {
+                -ms-flex-order: 10;
+                order: 10
+            }
+
+            .order-11 {
+                -ms-flex-order: 11;
+                order: 11
+            }
+
+            .order-12 {
+                -ms-flex-order: 12;
+                order: 12
+            }
+
+            .offset-1 {
+                margin-left: 8.333333%
+            }
+
+            .offset-2 {
+                margin-left: 16.666667%
+            }
+
+            .offset-3 {
+                margin-left: 25%
+            }
+
+            .offset-4 {
+                margin-left: 33.333333%
+            }
+
+            .offset-5 {
+                margin-left: 41.666667%
+            }
+
+            .offset-6 {
+                margin-left: 50%
+            }
+
+            .offset-7 {
+                margin-left: 58.333333%
+            }
+
+            .offset-8 {
+                margin-left: 66.666667%
+            }
+
+            .offset-9 {
+                margin-left: 75%
+            }
+
+            .offset-10 {
+                margin-left: 83.333333%
+            }
+
+            .offset-11 {
+                margin-left: 91.666667%
+            }
+
+            @media (min-width:576px) {
+                .col-sm {
+                    -ms-flex-preferred-size: 0;
+                    flex-basis: 0;
+                    -ms-flex-positive: 1;
+                    flex-grow: 1;
+                    max-width: 100%
+                }
+
+                .col-sm-auto {
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: auto;
+                    max-width: 100%
+                }
+
+                .col-sm-1 {
+                    -ms-flex: 0 0 8.333333%;
+                    flex: 0 0 8.333333%;
+                    max-width: 8.333333%
+                }
+
+                .col-sm-2 {
+                    -ms-flex: 0 0 16.666667%;
+                    flex: 0 0 16.666667%;
+                    max-width: 16.666667%
+                }
+
+                .col-sm-3 {
+                    -ms-flex: 0 0 25%;
+                    flex: 0 0 25%;
+                    max-width: 25%
+                }
+
+                .col-sm-4 {
+                    -ms-flex: 0 0 33.333333%;
+                    flex: 0 0 33.333333%;
+                    max-width: 33.333333%
+                }
+
+                .col-sm-5 {
+                    -ms-flex: 0 0 41.666667%;
+                    flex: 0 0 41.666667%;
+                    max-width: 41.666667%
+                }
+
+                .col-sm-6 {
+                    -ms-flex: 0 0 50%;
+                    flex: 0 0 50%;
+                    max-width: 50%
+                }
+
+                .col-sm-7 {
+                    -ms-flex: 0 0 58.333333%;
+                    flex: 0 0 58.333333%;
+                    max-width: 58.333333%
+                }
+
+                .col-sm-8 {
+                    -ms-flex: 0 0 66.666667%;
+                    flex: 0 0 66.666667%;
+                    max-width: 66.666667%
+                }
+
+                .col-sm-9 {
+                    -ms-flex: 0 0 75%;
+                    flex: 0 0 75%;
+                    max-width: 75%
+                }
+
+                .col-sm-10 {
+                    -ms-flex: 0 0 83.333333%;
+                    flex: 0 0 83.333333%;
+                    max-width: 83.333333%
+                }
+
+                .col-sm-11 {
+                    -ms-flex: 0 0 91.666667%;
+                    flex: 0 0 91.666667%;
+                    max-width: 91.666667%
+                }
+
+                .col-sm-12 {
+                    -ms-flex: 0 0 100%;
+                    flex: 0 0 100%;
+                    max-width: 100%
+                }
+
+                .order-sm-first {
+                    -ms-flex-order: -1;
+                    order: -1
+                }
+
+                .order-sm-last {
+                    -ms-flex-order: 13;
+                    order: 13
+                }
+
+                .order-sm-0 {
+                    -ms-flex-order: 0;
+                    order: 0
+                }
+
+                .order-sm-1 {
+                    -ms-flex-order: 1;
+                    order: 1
+                }
+
+                .order-sm-2 {
+                    -ms-flex-order: 2;
+                    order: 2
+                }
+
+                .order-sm-3 {
+                    -ms-flex-order: 3;
+                    order: 3
+                }
+
+                .order-sm-4 {
+                    -ms-flex-order: 4;
+                    order: 4
+                }
+
+                .order-sm-5 {
+                    -ms-flex-order: 5;
+                    order: 5
+                }
+
+                .order-sm-6 {
+                    -ms-flex-order: 6;
+                    order: 6
+                }
+
+                .order-sm-7 {
+                    -ms-flex-order: 7;
+                    order: 7
+                }
+
+                .order-sm-8 {
+                    -ms-flex-order: 8;
+                    order: 8
+                }
+
+                .order-sm-9 {
+                    -ms-flex-order: 9;
+                    order: 9
+                }
+
+                .order-sm-10 {
+                    -ms-flex-order: 10;
+                    order: 10
+                }
+
+                .order-sm-11 {
+                    -ms-flex-order: 11;
+                    order: 11
+                }
+
+                .order-sm-12 {
+                    -ms-flex-order: 12;
+                    order: 12
+                }
+
+                .offset-sm-0 {
+                    margin-left: 0
+                }
+
+                .offset-sm-1 {
+                    margin-left: 8.333333%
+                }
+
+                .offset-sm-2 {
+                    margin-left: 16.666667%
+                }
+
+                .offset-sm-3 {
+                    margin-left: 25%
+                }
+
+                .offset-sm-4 {
+                    margin-left: 33.333333%
+                }
+
+                .offset-sm-5 {
+                    margin-left: 41.666667%
+                }
+
+                .offset-sm-6 {
+                    margin-left: 50%
+                }
+
+                .offset-sm-7 {
+                    margin-left: 58.333333%
+                }
+
+                .offset-sm-8 {
+                    margin-left: 66.666667%
+                }
+
+                .offset-sm-9 {
+                    margin-left: 75%
+                }
+
+                .offset-sm-10 {
+                    margin-left: 83.333333%
+                }
+
+                .offset-sm-11 {
+                    margin-left: 91.666667%
+                }
+            }
+
+            @media (min-width:768px) {
+                .col-md {
+                    -ms-flex-preferred-size: 0;
+                    flex-basis: 0;
+                    -ms-flex-positive: 1;
+                    flex-grow: 1;
+                    max-width: 100%
+                }
+
+                .col-md-auto {
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: auto;
+                    max-width: 100%
+                }
+
+                .col-md-1 {
+                    -ms-flex: 0 0 8.333333%;
+                    flex: 0 0 8.333333%;
+                    max-width: 8.333333%
+                }
+
+                .col-md-2 {
+                    -ms-flex: 0 0 16.666667%;
+                    flex: 0 0 16.666667%;
+                    max-width: 16.666667%
+                }
+
+                .col-md-3 {
+                    -ms-flex: 0 0 25%;
+                    flex: 0 0 25%;
+                    max-width: 25%
+                }
+
+                .col-md-4 {
+                    -ms-flex: 0 0 33.333333%;
+                    flex: 0 0 33.333333%;
+                    max-width: 33.333333%
+                }
+
+                .col-md-5 {
+                    -ms-flex: 0 0 41.666667%;
+                    flex: 0 0 41.666667%;
+                    max-width: 41.666667%
+                }
+
+                .col-md-6 {
+                    -ms-flex: 0 0 50%;
+                    flex: 0 0 50%;
+                    max-width: 50%
+                }
+
+                .col-md-7 {
+                    -ms-flex: 0 0 58.333333%;
+                    flex: 0 0 58.333333%;
+                    max-width: 58.333333%
+                }
+
+                .col-md-8 {
+                    -ms-flex: 0 0 66.666667%;
+                    flex: 0 0 66.666667%;
+                    max-width: 66.666667%
+                }
+
+                .col-md-9 {
+                    -ms-flex: 0 0 75%;
+                    flex: 0 0 75%;
+                    max-width: 75%
+                }
+
+                .col-md-10 {
+                    -ms-flex: 0 0 83.333333%;
+                    flex: 0 0 83.333333%;
+                    max-width: 83.333333%
+                }
+
+                .col-md-11 {
+                    -ms-flex: 0 0 91.666667%;
+                    flex: 0 0 91.666667%;
+                    max-width: 91.666667%
+                }
+
+                .col-md-12 {
+                    -ms-flex: 0 0 100%;
+                    flex: 0 0 100%;
+                    max-width: 100%
+                }
+
+                .order-md-first {
+                    -ms-flex-order: -1;
+                    order: -1
+                }
+
+                .order-md-last {
+                    -ms-flex-order: 13;
+                    order: 13
+                }
+
+                .order-md-0 {
+                    -ms-flex-order: 0;
+                    order: 0
+                }
+
+                .order-md-1 {
+                    -ms-flex-order: 1;
+                    order: 1
+                }
+
+                .order-md-2 {
+                    -ms-flex-order: 2;
+                    order: 2
+                }
+
+                .order-md-3 {
+                    -ms-flex-order: 3;
+                    order: 3
+                }
+
+                .order-md-4 {
+                    -ms-flex-order: 4;
+                    order: 4
+                }
+
+                .order-md-5 {
+                    -ms-flex-order: 5;
+                    order: 5
+                }
+
+                .order-md-6 {
+                    -ms-flex-order: 6;
+                    order: 6
+                }
+
+                .order-md-7 {
+                    -ms-flex-order: 7;
+                    order: 7
+                }
+
+                .order-md-8 {
+                    -ms-flex-order: 8;
+                    order: 8
+                }
+
+                .order-md-9 {
+                    -ms-flex-order: 9;
+                    order: 9
+                }
+
+                .order-md-10 {
+                    -ms-flex-order: 10;
+                    order: 10
+                }
+
+                .order-md-11 {
+                    -ms-flex-order: 11;
+                    order: 11
+                }
+
+                .order-md-12 {
+                    -ms-flex-order: 12;
+                    order: 12
+                }
+
+                .offset-md-0 {
+                    margin-left: 0
+                }
+
+                .offset-md-1 {
+                    margin-left: 8.333333%
+                }
+
+                .offset-md-2 {
+                    margin-left: 16.666667%
+                }
+
+                .offset-md-3 {
+                    margin-left: 25%
+                }
+
+                .offset-md-4 {
+                    margin-left: 33.333333%
+                }
+
+                .offset-md-5 {
+                    margin-left: 41.666667%
+                }
+
+                .offset-md-6 {
+                    margin-left: 50%
+                }
+
+                .offset-md-7 {
+                    margin-left: 58.333333%
+                }
+
+                .offset-md-8 {
+                    margin-left: 66.666667%
+                }
+
+                .offset-md-9 {
+                    margin-left: 75%
+                }
+
+                .offset-md-10 {
+                    margin-left: 83.333333%
+                }
+
+                .offset-md-11 {
+                    margin-left: 91.666667%
+                }
+            }
+
+            @media (min-width:992px) {
+                .col-lg {
+                    -ms-flex-preferred-size: 0;
+                    flex-basis: 0;
+                    -ms-flex-positive: 1;
+                    flex-grow: 1;
+                    max-width: 100%
+                }
+
+                .col-lg-auto {
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: auto;
+                    max-width: 100%
+                }
+
+                .col-lg-1 {
+                    -ms-flex: 0 0 8.333333%;
+                    flex: 0 0 8.333333%;
+                    max-width: 8.333333%
+                }
+
+                .col-lg-2 {
+                    -ms-flex: 0 0 16.666667%;
+                    flex: 0 0 16.666667%;
+                    max-width: 16.666667%
+                }
+
+                .col-lg-3 {
+                    -ms-flex: 0 0 25%;
+                    flex: 0 0 25%;
+                    max-width: 25%
+                }
+
+                .col-lg-4 {
+                    -ms-flex: 0 0 33.333333%;
+                    flex: 0 0 33.333333%;
+                    max-width: 33.333333%
+                }
+
+                .col-lg-5 {
+                    -ms-flex: 0 0 41.666667%;
+                    flex: 0 0 41.666667%;
+                    max-width: 41.666667%
+                }
+
+                .col-lg-6 {
+                    -ms-flex: 0 0 50%;
+                    flex: 0 0 50%;
+                    max-width: 50%
+                }
+
+                .col-lg-7 {
+                    -ms-flex: 0 0 58.333333%;
+                    flex: 0 0 58.333333%;
+                    max-width: 58.333333%
+                }
+
+                .col-lg-8 {
+                    -ms-flex: 0 0 66.666667%;
+                    flex: 0 0 66.666667%;
+                    max-width: 66.666667%
+                }
+
+                .col-lg-9 {
+                    -ms-flex: 0 0 75%;
+                    flex: 0 0 75%;
+                    max-width: 75%
+                }
+
+                .col-lg-10 {
+                    -ms-flex: 0 0 83.333333%;
+                    flex: 0 0 83.333333%;
+                    max-width: 83.333333%
+                }
+
+                .col-lg-11 {
+                    -ms-flex: 0 0 91.666667%;
+                    flex: 0 0 91.666667%;
+                    max-width: 91.666667%
+                }
+
+                .col-lg-12 {
+                    -ms-flex: 0 0 100%;
+                    flex: 0 0 100%;
+                    max-width: 100%
+                }
+
+                .order-lg-first {
+                    -ms-flex-order: -1;
+                    order: -1
+                }
+
+                .order-lg-last {
+                    -ms-flex-order: 13;
+                    order: 13
+                }
+
+                .order-lg-0 {
+                    -ms-flex-order: 0;
+                    order: 0
+                }
+
+                .order-lg-1 {
+                    -ms-flex-order: 1;
+                    order: 1
+                }
+
+                .order-lg-2 {
+                    -ms-flex-order: 2;
+                    order: 2
+                }
+
+                .order-lg-3 {
+                    -ms-flex-order: 3;
+                    order: 3
+                }
+
+                .order-lg-4 {
+                    -ms-flex-order: 4;
+                    order: 4
+                }
+
+                .order-lg-5 {
+                    -ms-flex-order: 5;
+                    order: 5
+                }
+
+                .order-lg-6 {
+                    -ms-flex-order: 6;
+                    order: 6
+                }
+
+                .order-lg-7 {
+                    -ms-flex-order: 7;
+                    order: 7
+                }
+
+                .order-lg-8 {
+                    -ms-flex-order: 8;
+                    order: 8
+                }
+
+                .order-lg-9 {
+                    -ms-flex-order: 9;
+                    order: 9
+                }
+
+                .order-lg-10 {
+                    -ms-flex-order: 10;
+                    order: 10
+                }
+
+                .order-lg-11 {
+                    -ms-flex-order: 11;
+                    order: 11
+                }
+
+                .order-lg-12 {
+                    -ms-flex-order: 12;
+                    order: 12
+                }
+
+                .offset-lg-0 {
+                    margin-left: 0
+                }
+
+                .offset-lg-1 {
+                    margin-left: 8.333333%
+                }
+
+                .offset-lg-2 {
+                    margin-left: 16.666667%
+                }
+
+                .offset-lg-3 {
+                    margin-left: 25%
+                }
+
+                .offset-lg-4 {
+                    margin-left: 33.333333%
+                }
+
+                .offset-lg-5 {
+                    margin-left: 41.666667%
+                }
+
+                .offset-lg-6 {
+                    margin-left: 50%
+                }
+
+                .offset-lg-7 {
+                    margin-left: 58.333333%
+                }
+
+                .offset-lg-8 {
+                    margin-left: 66.666667%
+                }
+
+                .offset-lg-9 {
+                    margin-left: 75%
+                }
+
+                .offset-lg-10 {
+                    margin-left: 83.333333%
+                }
+
+                .offset-lg-11 {
+                    margin-left: 91.666667%
+                }
+            }
+
+            @media (min-width:1200px) {
+                .col-xl {
+                    -ms-flex-preferred-size: 0;
+                    flex-basis: 0;
+                    -ms-flex-positive: 1;
+                    flex-grow: 1;
+                    max-width: 100%
+                }
+
+                .col-xl-auto {
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    width: auto;
+                    max-width: 100%
+                }
+
+                .col-xl-1 {
+                    -ms-flex: 0 0 8.333333%;
+                    flex: 0 0 8.333333%;
+                    max-width: 8.333333%
+                }
+
+                .col-xl-2 {
+                    -ms-flex: 0 0 16.666667%;
+                    flex: 0 0 16.666667%;
+                    max-width: 16.666667%
+                }
+
+                .col-xl-3 {
+                    -ms-flex: 0 0 25%;
+                    flex: 0 0 25%;
+                    max-width: 25%
+                }
+
+                .col-xl-4 {
+                    -ms-flex: 0 0 33.333333%;
+                    flex: 0 0 33.333333%;
+                    max-width: 33.333333%
+                }
+
+                .col-xl-5 {
+                    -ms-flex: 0 0 41.666667%;
+                    flex: 0 0 41.666667%;
+                    max-width: 41.666667%
+                }
+
+                .col-xl-6 {
+                    -ms-flex: 0 0 50%;
+                    flex: 0 0 50%;
+                    max-width: 50%
+                }
+
+                .col-xl-7 {
+                    -ms-flex: 0 0 58.333333%;
+                    flex: 0 0 58.333333%;
+                    max-width: 58.333333%
+                }
+
+                .col-xl-8 {
+                    -ms-flex: 0 0 66.666667%;
+                    flex: 0 0 66.666667%;
+                    max-width: 66.666667%
+                }
+
+                .col-xl-9 {
+                    -ms-flex: 0 0 75%;
+                    flex: 0 0 75%;
+                    max-width: 75%
+                }
+
+                .col-xl-10 {
+                    -ms-flex: 0 0 83.333333%;
+                    flex: 0 0 83.333333%;
+                    max-width: 83.333333%
+                }
+
+                .col-xl-11 {
+                    -ms-flex: 0 0 91.666667%;
+                    flex: 0 0 91.666667%;
+                    max-width: 91.666667%
+                }
+
+                .col-xl-12 {
+                    -ms-flex: 0 0 100%;
+                    flex: 0 0 100%;
+                    max-width: 100%
+                }
+
+                .order-xl-first {
+                    -ms-flex-order: -1;
+                    order: -1
+                }
+
+                .order-xl-last {
+                    -ms-flex-order: 13;
+                    order: 13
+                }
+
+                .order-xl-0 {
+                    -ms-flex-order: 0;
+                    order: 0
+                }
+
+                .order-xl-1 {
+                    -ms-flex-order: 1;
+                    order: 1
+                }
+
+                .order-xl-2 {
+                    -ms-flex-order: 2;
+                    order: 2
+                }
+
+                .order-xl-3 {
+                    -ms-flex-order: 3;
+                    order: 3
+                }
+
+                .order-xl-4 {
+                    -ms-flex-order: 4;
+                    order: 4
+                }
+
+                .order-xl-5 {
+                    -ms-flex-order: 5;
+                    order: 5
+                }
+
+                .order-xl-6 {
+                    -ms-flex-order: 6;
+                    order: 6
+                }
+
+                .order-xl-7 {
+                    -ms-flex-order: 7;
+                    order: 7
+                }
+
+                .order-xl-8 {
+                    -ms-flex-order: 8;
+                    order: 8
+                }
+
+                .order-xl-9 {
+                    -ms-flex-order: 9;
+                    order: 9
+                }
+
+                .order-xl-10 {
+                    -ms-flex-order: 10;
+                    order: 10
+                }
+
+                .order-xl-11 {
+                    -ms-flex-order: 11;
+                    order: 11
+                }
+
+                .order-xl-12 {
+                    -ms-flex-order: 12;
+                    order: 12
+                }
+
+                .offset-xl-0 {
+                    margin-left: 0
+                }
+
+                .offset-xl-1 {
+                    margin-left: 8.333333%
+                }
+
+                .offset-xl-2 {
+                    margin-left: 16.666667%
+                }
+
+                .offset-xl-3 {
+                    margin-left: 25%
+                }
+
+                .offset-xl-4 {
+                    margin-left: 33.333333%
+                }
+
+                .offset-xl-5 {
+                    margin-left: 41.666667%
+                }
+
+                .offset-xl-6 {
+                    margin-left: 50%
+                }
+
+                .offset-xl-7 {
+                    margin-left: 58.333333%
+                }
+
+                .offset-xl-8 {
+                    margin-left: 66.666667%
+                }
+
+                .offset-xl-9 {
+                    margin-left: 75%
+                }
+
+                .offset-xl-10 {
+                    margin-left: 83.333333%
+                }
+
+                .offset-xl-11 {
+                    margin-left: 91.666667%
+                }
+            }
+
+            *,
+            ::after,
+            ::before {
+                box-sizing: border-box;
+            }
+
+            hr {
+                box-sizing: content-box;
+                height: 0;
+                overflow: visible;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin-top: 0;
+                margin-bottom: .5rem;
+            }
+
+            p {
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+
+            ol,
+            ul {
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+
+            ul ul {
+                margin-bottom: 0;
+            }
+
+            ul li {
+                color: #4F5157;
+                font-size: 1rem;
+            }
+
+            ul {
+                display: block;
+                padding-inline-start: 20px;
+            }
+
+            blockquote {
+                margin: 0 0 1rem;
+            }
+
+            strong {
+                font-weight: bolder;
+            }
+
+            a {
+                color: #007bff;
+                text-decoration: none;
+                background-color: transparent;
+            }
+
+            a:hover {
+                color: #0056 b3;
+                text-decoration: underline;
+            }
+
+            code,
+            pre {
+                font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                font-size: 1em;
+            }
+
+            pre {
+                margin-top: 0;
+                margin-bottom: 1rem;
+                overflow: auto;
+            }
+
+            img {
+                vertical-align: middle;
+                border-style: none;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin-bottom: .5rem;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.75rem;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+            }
+
+            hr {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                border: 0;
+                border-top: 1px solid rgba(0, 0, 0, .1);
+            }
+
+            small {
+                font-size: 80%;
+                font-weight: 400;
+            }
+
+            .img-fluid {
+                max-width: 100%;
+                height: auto;
+            }
+
+            code {
+                font-size: 87.5%;
+                color: #e83e8c;
+                word-break: break-word;
+            }
+
+            pre {
+                display: block;
+                font-size: 87.5%;
+                color: #212529;
+            }
+
+            pre code {
+                font-size: inherit;
+                color: inherit;
+                word-break: normal;
+            }
+
+            .container {
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            @media (min-width:576px) {
+                .container {
+                    max-width: 540px;
+                }
+            }
+
+            @media (min-width:768px) {
+                .container {
+                    max-width: 720px;
+                }
+            }
+
+            @media (min-width:992px) {
+                .container {
+                    max-width: 960px;
+                }
+            }
+
+            @media (min-width:1200px) {
+                .container {
+                    max-width: 1140px;
+                }
+            }
+
+            .row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+
+            .col-auto,
+            .col-lg-9,
+            .col-md-3,
+            .col-md-9 {
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            .col-auto {
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                width: auto;
+                max-width: 100%;
+            }
+
+            @media (min-width:768px) {
+                .col-md-3 {
+                    -ms-flex: 0 0 25%;
+                    flex: 0 0 25%;
+                    max-width: 25%;
+                }
+
+                .col-md-9 {
+                    -ms-flex: 0 0 75%;
+                    flex: 0 0 75%;
+                    max-width: 75%;
+                }
+            }
+
+            @media (min-width:992px) {
+                .col-lg-9 {
+                    -ms-flex: 0 0 75%;
+                    flex: 0 0 75%;
+                    max-width: 75%;
+                }
+            }
+
+            .nav {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                padding-left: 0;
+                margin-bottom: 0;
+                list-style: none;
+            }
+
+            .nav-link {
+                display: block;
+                padding: .5rem 1rem;
+            }
+
+            .nav-link:focus,
+            .nav-link:hover {
+                text-decoration: none;
+            }
+
+            .d-none {
+                display: none !important;
+            }
+
+            @media (min-width:768px) {
+                .d-md-block {
+                    display: block !important;
+                }
+            }
+
+            .float-left {
+                float: left !important;
+            }
+
+            @media print {
+
+                *,
+                ::after,
+                ::before {
+                    text-shadow: none !important;
+                    box-shadow: none !important;
+                }
+
+                a:not(.btn) {
+                    text-decoration: underline;
+                }
+
+                pre {
+                    white-space: pre-wrap !important;
+                }
+
+                blockquote,
+                pre {
+                    border: 1px solid #adb5bd;
+                    page-break -inside: avoid;
+                }
+
+                img {
+                    page-break -inside: avoid;
+                }
+
+                h2,
+                h3,
+                p {
+                    orphans: 3;
+                    widows: 3;
+                }
+
+                h2,
+                h3 {
+                    page-break -after: avoid;
+                }
+
+                .container {
+                    min-width: 992px !important;
+                }
+            }
+
+            /*! CSS Used from: http://localhost:4000/css/site-wide/site-wide-style.css */
+            .content {
+                margin-top: 85px;
+            }
+
+            hr {
+                margin-top: 4rem;
+                margin-bottom: 2rem;
+            }
+
+            hr.underliner {
+                margin: 0px 0px 35px;
+            }
+
+            .post-tags {
+                margin-top: -3px;
+                line-height: 18px;
+            }
+
+            @media(max-width: 992px) {
+                .content {
+                    margin-top: 55px;
+                }
+            }
+
+            @media(max-width: 768px) {
+                .content {
+                    margin-top: 25px;
+                }
+            }
+
+            ol, ul.readme {
+                color: #4F5157;
+                list-style: none;
+                list-style-position: outside;
+                counter-reset: counter;
+                margin-block-start: 1.5em;
+                margin-block-end: 1.5em;
+                margin-inline-start: 1.5em;
+                margin-inline-end: 0px;
+                padding-inline-start: 0px;
+            }
+
+            ol li,
+            ul.readme li {
+              margin-bottom: 0.4rem;
+            }
+
+            ul.toc-ul-root {
+                line-height: 1.5em;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 1em;
+                margin-inline-end: 0px;
+                padding-inline-start: 0px;
+            }
+
+            ul.toc-ul-root.nav span {
+                margin-left: -1em;
+                margin-right: 0.25em;
+            }
+
+            ul.toc-ul-root.nav a.nav-link {
+                padding: 0px !important;
+            }
+
+            #toc a.nav-link.toc-link-1 {
+                color: #16161D;
+                font-weight: 600;
+            }
+
+            #toc a.nav-link.toc-link-2 {
+                color: #4F5157;
+                font-weight: 500;
+            }
+
+            #toc a.nav-link.toc-link-3 {
+                color: #4F5157;
+                margin-left: 0.5em;
+                font-weight: 400;
+            }
+
+            ul.readme li,
+            li {
+                color: #16161D;
+                font-family: "Helvetica Neue", Arial, sans-serif, "Apple Coloremoji", "Segoe UIemoji", "Segoe UI Symbol";
+                font-size: 1.2rem;
+            }
+
+            ol li {
+                counter-increment: counter;
+            }
+
+            ol li::before {
+                color: #1685FC;
+                content: "."
+                    counter(counter);
+                font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1.25em;
+                margin-right: 0.25em;
+                text-align: right;
+                direction: rtl;
+                font-size: 1.1rem;
+            }
+
+            ul.readme li::before {
+                color: #1685FC;
+                content: "•";
+                font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1.25em;
+                margin-right: 0.25em;
+                text-align: right;
+                direction: rtl;
+                font-size: 1.1rem;
+            }
+
+            a,
+            a: hover {
+                transition: all ease 0.3 s;
+            }
+
+            h1 {
+                font-family: "Helvetica Neue", Arial, sans-serif, "Apple Coloremoji", "Segoe UIemoji", "Segoe UI Symbol";
+                padding-bottom: 40px;
+                font-size: 60px;
+                line-height: 60px;
+                letter-spacing: -1.1px;
+            }
+
+            h2 {
+                font-family: "Helvetica Neue", Arial, sans-serif, "Apple Coloremoji", "Segoe UIemoji", "Segoe UI Symbol";
+                padding-bottom: 20px;
+                font-size: 40px;
+                line-height: 40px;
+                font-weight: normal;
+                letter-spacing: -1.1px;
+            }
+
+            h2 span {
+                margin-right: 0.25em;
+            }
+
+            h4 {
+                font-family: "Helvetica Neue", Arial, sans-serif, "Apple Coloremoji", "Segoe UIemoji", "Segoe UI Symbol";
+                padding-bottom: 15px;
+                font-size: 24px;
+                font-weight: normal;
+            }
+
+            h3 {
+                font-family: "Helvetica Neue", Arial, sans-serif, "Apple Coloremoji", "Segoe UIemoji", "Segoe UI Symbol";
+                font-size: 1rem;
+                font-weight: 600;
+            }
+
+            p {
+                color: #4F5157;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: -0.2px;
+                font-family: "Helvetica Neue", Arial, sans-serif, "Apple Coloremoji", "Segoe UIemoji", "Segoe UI Symbol";
+            }
+
+            strong {
+                font-weight: bolder;
+                font-family: "Helvetica Neue", Arial, sans-serif, "Apple Coloremoji", "Segoe UIemoji", "Segoe UI Symbol";
+                letter-spacing: 0.025em;
+            }
+
+            .blue {
+                color: #2974 FF !important;
+            }
+
+            small.blue {
+                font-size: 16px;
+                font-style: normal;
+                margin-left: 0px;
+            }
+
+            pre code {
+                background-color: rgba(190, 190, 190, 0.11) !important;
+                font-size: 10pt;
+                color: inherit;
+                padding: 20px 25px;
+                display: block;
+                color: #2974FF;
+                margin: 0px;
+                white-space: pre-wrap;
+                white-space: -moz-pre-wrap;
+                white-space: -pre-wrap;
+                white-space: -o-pre-wrap;
+                word-wrap: break-word;
+            }
+
+            .content h2,
+            .content h3,
+            .content h4 {
+                margin-top: 60px;
+            }
+
+            blockquote p {
+                color: #1685FC;
+                line-height: 1.5rem;
+                white-space: pre-wrap;
+                white-space: -moz-pre-wrap;
+                white-space: -pre-wrap;
+                white-space: -o-pre-wrap;
+                word-wrap: break-word;
+                font-family: "Helvetica Neue", Arial, sans-serif, "Apple Coloremoji", "Segoe UIemoji", "Segoe UI Symbol";
+                font-size: 1rem;
+            }
+
+            blockquote.readme,
+            li blockquote {
+              background-color: rgba(190, 190, 190, 0.11) !important;
+              padding: 0.5rem 1rem;
+              margin: 1rem 1rem 1rem 2rem;
+            }
+
+            li blockquote p {
+              color: #76767d !important;
+            }
+
+            blockquote.readme p {
+              margin: 0 !important;
+            }
+
+            blockquote {
+                font-size: 0.5em;
+                border-left: none;
+                border-radius: 4px;
+            }
+
+            blockquote a {
+                text-decoration: underline;
+            }
+
+            div.tutorial figure {
+                padding: 35px;
+                background: #E8E8E8;
+                border-radius: 15px;
+                text-align: center;
+            }
+
+            figure code {
+                text-align: left;
+            }
+
+            div.tutorial figure.indented {
+                margin: 12px 0px !important;
+            }
+
+            div.tutorial figure.clearbg {
+                background: transparent;
+            }
+
+            pre.lineno {
+                margin-bottom: 0px;
+                color: #DDD;
+            }
+
+            div.tutorial figure.highlight {
+                margin: 0px !important;
+                padding: 0px !important;
+                background: #FEFEFE;
+            }
+
+
+            .sticky {
+                position: sticky;
+                position: -webkit-sticky;
+                position: -moz-sticky;
+                position: -ms-sticky;
+                position: -o-sticky;
+            }
+
+            #toc.sticky {
+                top: 40px;
+            }
+
+            @media(max-width: 768px) {
+                h1 {
+                    font-size: 48px;
+                    margin-top: 10px;
+                    line-height: 48px;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    line-height: 32px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+
+                p strong {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+
+                hr {
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .nav-link: focus,
+            .nav-link: hover {
+                text-decoration: none;
+                color: #007bff;
+                transition: all ease 0.3s;
+            }
+
+            .nav-link {
+                display: block;
+                padding: .5rem 24px;
+                margin-left: 20px;
+                font-family: "Helvetica Neue", Arial, sans-serif, "Apple Coloremoji", "Segoe UIemoji", "Segoe UI Symbol";
+            }
+
+            @media (max-width: 992px) {
+                .nav-link {
+                    display: block;
+                    padding: .5rem 15px;
+                    margin-left: 7px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .nav-link {
+                    display: block;
+                    width: 100%;
+                    padding: .6rem 15px;
+                    margin-left: 0px;
+                    text-align: left;
+                    background-color: #fff;
+                    margin-bottom: 1px;
+                    border-radius: 0px !important;
+                }
+
+                .nav {
+                    display: -ms-flexbox;
+                    background-color: #E4E7E9;
+                    display: block;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    list-style: none;
+                    border-top: 0px solid #E4E7E9;
+                    padding-top: 1px;
+                    border-bottom: 0px solid #E4E7E9;
+                    padding-bottom: 0px;
+                    margin-top: 10px;
+                }
+            }
+
+            .relative {
+                position: relative;
+            }
+
+            .toc {
+                top: 127px;
+            }
+
+            #toc {
+                padding: 0px;
+                margin: 0px;
+                margin-bottom: 25px;
+            }
+
+            #toc.nav-link {
+                border-radius: .25rem;
+                -moz-border-radius: .25rem;
+                -webkit-border-radius: .25rem;
+                border: 0px solid #000000;
+                margin-left: 0px;
+                padding: 0px 0px 0px 17px;
+                background-color: none;
+                transition: all ease 0.3s;
+            }
+
+            #toc.nav-link: hover,
+            #toc.nav-link: active,
+            #toc.nav-link: focus {
+                background-color: rgba(0, 0, 0, 0) !important;
+                color: #000;
+                transition: all ease 0.3s;
+            }
+
+            .toc a {
+                color: #08090a;
+                border-bottom: 1px solid #fff;
+            }
+
+            .toc a: hover {
+                border-bottom: 1px solid #A2A7B0;
+                text-decoration: none;
+            }
+
+            .toc,
+            .toc li {
+                display: block;
+                width: 100%;
+                font-size: 15px;
+                padding: 0px 0px 8px 0px;
+            }
+
+            .toc,
+            .toc li li {
+                font-size: 14px;
+                padding: 0px 0px 5px 0px;
+            }
+
+            .toc,
+            .toc li li li {
+                font-size: 13px;
+                padding: 0px 0px 3px 0px;
+            }
+
+            ul.nav ul.nav {
+                display: block;
+            }
+
+            #toc.nav.nav {
+                display: none;
+                transition: all ease 0.3 s;
+                margin-top: 3px;
+            }
+
+            p.intro {
+                font-family: "Helvetica Neue", Arial, sans-serif, "Apple Coloremoji", "Segoe UIemoji", "Segoe UI Symbol";
+                font-size: 20px;
+                line-height: 1.6em;
+                width: 90%;
+                letter-spacing: 0px;
+            }
+
+            pre.highlight {
+                margin-top: 1rem;
+            }
+
+            .highlight {
+                background: #ffffff;
+                white-space: nowrap;
+                word-wrap: normal;
+            }
+    </style>
+</head>
+
+<body class="integrating an html button">
+<div class="container content integrating an html button tutorials">
+        <div class="row">
+            <div class="col-md-3 d-none d-md-block float-left">
+                <br><br>
+                <div id="toc" class="d-none d-md-block toc sticky">
+                    <ul class="toc-ul-root nav">
+                        <li><a class="nav-link toc-link-1" href="#custom-code"><span>1.</span>Custom Code</a></li>
+                        <li><a class="nav-link toc-link-1" href="#folder-breakdown"><span>2.</span>Folder Breakdown</a></li>
+                        <li><a class="nav-link toc-link-1" href="#integrating-a-single-instance"><span>3.</span>Integrating a Single Instance</a></li>
+                        <li><a class="nav-link toc-link-1" href="#multiple-instances"><span>4.</span>Multiple Instances</a></li>
+                        <li><a class="nav-link toc-link-1" href="#multiple-types"><span>5.</span>Multiple Types</a></li>
+                        <li><a class="nav-link toc-link-1" href="#make-things-global"><span>6.</span>Make Things Global</a></li>
+                        <li><a class="nav-link toc-link-1" href="#flowcommon"><span>7.</span>Flow Common</a></li>
+                        <li><a class="nav-link toc-link-1" href="#connect-with-us"><span>8.</span>Connect With Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 col-lg-9 tutorial relative">
+                <div class="row justify-content-left">
+                    <div class="col-auto">
+                        <p class="post-tags">
+                            <small class="blue">
+                                WebComponent,
+                                HTML,
+                                Button
+                            </small>
+                        </p>
+                    </div>
+                </div>
+                <hr class="underliner">
+                <div class="docs-content">
+                    <h1>Integrating an HTML Button</h1>
+                    <p class="intro">This document covers all the details you need to know to integrate an HTML button into your site. The steps below pertain to the <u>HTML Toggle Button – WebComponent</u> export.</p>
+                    <p class="intro">When working through this doc, remember:</p>
+                    <ul class="readme">
+                        <li>The code below contains variables from your Flow file.</li>
+                        <li>That means you can copy and paste it verbatim into your project.</li>
+                        <li>We used our code export engine to produce it, so you can be sure that it is <b>exact</b></li>
+                    </ul>
+                    <h2 id="custom-code">Custom Code</h2>
+                    <p>Every time you export a timeline to code it varies depending on the animations, layer names, etc.
+                        To ensure these instructions are crystal clear they are tailored to the code you have just exported.
+                        For example, the name of the timeline you just exported is: <code class="highlighter-rouge">Timeline</code>.</p>
+                    <p>Let’s get to it.</p>
+                    <h2 id="folder-breakdown">Folder Breakdown</h2>
+                    <p>When you export a project you’ll see the following structure:</p>
+                    <ul>
+                        <li>Timeline (Folder)
+                            <ul>
+                                <li>css (Folder)</li>
+                                <li>FlowCommon (Folder)</li>
+                                <li>fonts (Folder)</li>
+                                <li>img (Folder)</li>
+                                <li>index.html</li>
+                                <li>js (Folder)</li>
+                                <li>readme.html</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>The <code class="highlighter-rouge">index.html</code> file is included to allow you to quickly view/test your toggle button in a browser without having to integrate it into a webpage. You can get rid of it along with the <code class="highlighter-rouge">readme.html</code> before integrating your button code.</p>
+                    <h2 id="integrating-a-single-instance">Integrating a Single Instance</h2>
+                    <p>This section explains how to integrate a single instance of your component on a webpage. If you want to reuse the component several times throughout a page, you'll have to follow these steps, then continue with those in <a href="#multiple-instances">Multiple Instances</a> section.</p>
+                    <ol>
+                        <li>The first step is to move the entire <code class="highlighter-rouge">Timeline</code> folder to a location of your choice inside your site’s file structure.</li>
+                        <li>Add the following code to the <code class="highlighter-rouge">&lt;head&gt;</code> or <code class="highlighter-rouge">&lt;footer&gt;</code> of your page.
+                            <div class="highlighter-rouge">
+                                <div class="highlight">
+                                    <pre class="highlight">
+                                        <code>&lt;script&gt;
+        function loadScripts(sources) {
+            sources.forEach(src =&gt; {
+                let script = document.createElement("script");
+                script.src = src;
+                script.async = false;
+                document.head.appendChild(script);
+            });
+        }
+        let commonFolderPath = "./FlowCommon"
+        let flowCommonScript = [`${commonFolderPath}/flowCommon.js`];
+        loadScripts(flowCommonScript)
+    &lt;/script&gt;</code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Also, add the following code to the <code class="highlighter-rouge">&lt;head&gt;</code> or <code class="highlighter-rouge">&lt;footer&gt;</code> of your page. Make sure this script executes after the script in step 2.
+                            <div class="highlighter-rouge">
+                                <div class="highlight">
+                                    <pre class="highlight">
+                                        <code>&lt;script&gt;
+        function callback() {
+            console.log("I've been clicked!")
+        }
+        let timelineResourcesPath = ".";
+        let timelineScript = [`${timelineResourcesPath}/js/timelineToggleButton.js`];
+        loadScripts(timelineScript)
+    &lt;/script&gt;</code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Integrate your button into your page by copy/pasting the following line of code into your page:
+                            <div class="highlighter-rouge">
+                                <div class="highlight">
+                                    <pre class="highlight">
+                                    <code>&lt;timeline-button id="timelineButton" onclick="timelineButton.toggle(true)"&gt;&lt;/timeline-button&gt;</code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Refresh the page to see the button.
+                            <blockquote>
+                                <p>If the button doesn’t show up at this point, check your browser’s console to see if there is an issue with either of the <code class="highlighter-rouge">commonFolderPath</code> or the <code class="highlighter-rouge">timelineResourcesPath</code>.</p>
+                            </blockquote>
+                        </li>
+                        <li>To make your button actually do something, add some logic to the callback method:
+                            <div class="highlighter-rouge">
+                                <div class="highlight">
+                                    <pre class="highlight"><code>
+    function callback() {
+        //put your logic code here
+    }</code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                    <h3 id="details-for-what-you-just-did">Details For What You Just Did</h3>
+                    <p>You just integrated 2 scripts into your page. The first dynamically injects a few common scripts (used by all the Flow Web exports) into the <code class="highlighter-rouge">&lt;head&gt;</code> of your page.</p>
+                    <p><code class="highlighter-rouge">commonFolderPath</code> is where the path to the Flow Common folder is specified. If you decide to move the FlowCommon folder, you must update the value of this variable.</p>
+                    <p>The second script injects the timeline that drives the button’s animation. It also defines a callback which is triggered when the button’s state is toggled. You can replace the code inside of this callback with what ever logic you would like to trigger when the button is clicked.</p>
+                    <p><code class="highlighter-rouge">timelineResourcesPath</code> is where you specify the path to the Timeline folder. You must update the value of this variable based on the new location you have chosen for your Timeline folder.</p>
+                    <p>The <code class="highlighter-rouge">callback()</code> gets triggered when the button’s animation completes.</p>
+                    <h2 id="multiple-instances">Multiple Instances</h2>
+                    <p>If you want multiple instances of a buttons on a page, do the following:</p>
+                    <ol>
+                        <li>Create a second (third, or fourth…) instance of your button in <code class="highlighter-rouge">instances.js</code> by creating another <code class="highlighter-rouge">ToggleButton</code> variable with a different ID. For example:
+                            <div class="highlighter-rouge">
+                                <div class="highlight">
+                                    <pre class="highlight">
+                                        <code>let timelineButton1 = createToggleButton(
+      "timelineButton1",
+      callback,
+      timelineResourcesPath,
+      TimelineTimeline,
+      TimelineReverseTimeline
+    );</code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Add another button element to your page which uses the new ToggleButton variable you created in the previous step. For example:
+                            <div class="highlighter-rouge">
+                                <div class="highlight">
+                                    <pre class="highlight"><code>&lt;timeline-button id="timelineButton1" onclick="timelineButton1.toggle(true)"&gt;&lt;/timeline-button&gt;</code></pre>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Refresh your browser and enjoy your second ToggleButton!</li>
+                    </ol>
+                    <p>For each new ToggleButton instance you would like to create, repeat the steps above using new variable names.</p>
+                    <h2 id="multiple-types">Multiple Types</h2>
+                    <p>If you want a different toggle button (with different timelines) on your page do the following:</p>
+                    <ol>
+                        <li>Export another timeline</li>
+                        <li>Delete the <code class="highlighter-rouge">FlowCommon</code> folder from the exported code</li>
+                        <li>Add the folder to your project, right next to your first Timeline folder.</li>
+                        <li>Hook everything up, by following the steps in the <a href="#integrating-a-single-instance">first section</a>.</li>
+                        <li>Refresh your browser.</li>
+                    </ol>
+                    <p>Repeat the steps above for each additional type you would like to integrate into your page.</p>
+                    <h2 id="make-things-global">Make Things Global</h2>
+                    <p>Best practice is to put the Timeline and FlowCommon folders in a directory on your site that can be accessed from any other page.</p>
+                    <p>Remember to modify the <code class="highlighter-rouge">commonFolderPath</code> or the <code class="highlighter-rouge">timelineResourcesPath</code> variables to point to these folders if you do so.</p>
+                    <p>You’ll want to <strong>make sure the common files are only imported one time on your page.</strong></p>
+                    <h2 id="flowcommon">FlowCommon</h2>
+                    <p>These are a set of files you’ll need to run your component on the web. One is a polyfill for the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API">Web Animations</a> api, the others are a player and a button class.</p>
+
+                    <p>The files are:</p>
+
+                    <h3>web-animations.min.js</h3>
+                    <p>The polyfill for the Web Animations api. This file comes from [W3C's Github Page](https://github.com/web-animations/web-animations-js), and is maintanied by W3C.</p>
+
+                    <h3>player.js</h3>
+                    <p>This file is the thing that actually controls your animations. If you want to learn some more about it, have a look at our <a href="https://createwithflow.com/docs/driverPlayer/?utm_source=readme&utm_medium=HTML%20Toggle%20Button%20Web%20Component#playerjs">player documentation</a>.</p>
+
+                    <h3>ToggleButton.js</h3>
+                    <p>This file is the button class that contains your component and handles user clicks. It also contains a player that drives your animation.</p>
+
+                    <h2 id="connect-with-us">Connect With Us</h2>
+                    <p>If you have questions about this, please reach out either:</p>
+
+                    <ul>
+                      <li>by <a href="mailto:info@createwithflow.com?subject=I Need Help Working With Components">email</a></li>
+                      <li>on our <a href="http://join-createwithflow.herokuapp.com">Slack Group</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1037 @@
+@font-face {
+    font-family: "BentonSans-Medium";
+    src: url("../fonts/BentonSans-Medium.otf");
+}
+@font-face {
+    font-family: "BentonSans-Medium";
+    src: url("../fonts/BentonSans-Medium.otf");
+}
+@font-face {
+    font-family: "BentonSans-Medium";
+    src: url("../fonts/BentonSans-Medium.otf");
+}
+@font-face {
+    font-family: "BentonSans-Regular";
+    src: url("../fonts/BentonSans-Regular.otf");
+}
+@font-face {
+    font-family: "BentonSans-Regular";
+    src: url("../fonts/BentonSans-Regular.otf");
+}
+@font-face {
+    font-family: "BentonSansCondensed-Medium";
+    src: url("../fonts/BentonSansCondensed-Medium.otf");
+}
+
+.flow-layer {
+    position: absolute;
+    overflow: visible;
+    box-sizing: border-box;
+    border-width: 0px;
+}
+
+.flow-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    border-width: 0px;
+}
+
+.flow-border {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0px;
+}
+
+#Timeline.flow-artboard {
+    width: 1554px;
+    height: 914.47px;
+    overflow: hidden;
+    position: relative;
+    padding: 0px;
+    margin: 0px auto;
+    background-color: #FFFFFF;
+    visibility: visible;
+}
+
+#Timeline .group {
+    width: 1554px;
+    height: 917px;
+    left: 777px;
+    top: 458.47px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .bitmap {
+    width: 1554px;
+    height: 916px;
+    left: 777px;
+    top: 458px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    clip-path: url(#timeline-bitmap-mask);
+    -webkit-clip-path: path("M0,0c0,0,1554,0,1554,0 0,0,0,916,0,916 0,0,-1554,0,-1554,0 0,0,0,-916,0,-916zM0,0");}
+
+#Timeline .mask_1 {
+    width: 1554px;
+    height: 916px;
+    left: 777px;
+    top: 458px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .mask_1-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #D8D8D8;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+#Timeline .bitmap_1 {
+    width: 1554px;
+    height: 1027px;
+    left: 777px;
+    top: 402.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    background-image: url(../img/Bitmap.png);
+    background-size:  100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;}
+
+#Timeline .rectangle {
+    width: 280px;
+    height: 848px;
+    left: 210px;
+    top: 493px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    stroke: #CFD2D7;
+    fill: #EFF2F5;
+    stroke-miterlimit: 10;
+}
+#Timeline .alert {
+    width: 229px;
+    height: 18px;
+    left: 209px;
+    top: 150.03px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 0.03;
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .oval_copy {
+    width: 9px;
+    height: 9px;
+    left: 4.5px;
+    top: 9.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .oval_copy-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #165CAB;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+#Timeline .new_activity_since_i {
+    width: 213px;
+    height: 18px;
+    left: 122.5px;
+    top: 9px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Regular";
+    font-size: 12px;
+    text-anchor: middle;
+    inline-size: 213;
+    text-align: left;
+    color: #616365;
+    overflow: hidden;}
+
+
+#Timeline .status {
+    width: 293px;
+    height: 750px;
+    left: 239px;
+    top: 505px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .group_5 {
+    width: 247px;
+    height: 203px;
+    left: 125.5px;
+    top: 101.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .mask_copy {
+    width: 247px;
+    height: 203px;
+    left: 123.5px;
+    top: 101.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .mask_copy-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #FFFFFF;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+#Timeline .group_2_copy_4 {
+    width: 230px;
+    height: 117px;
+    left: 124px;
+    top: 126.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .group_2_copy {
+    width: 229px;
+    height: 117px;
+    left: 115.5px;
+    top: 58.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .updated_by_aaron_ste {
+    width: 228px;
+    height: 36px;
+    left: 114px;
+    top: 50px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Regular";
+    font-size: 12px;
+    text-anchor: middle;
+    inline-size: 228;
+    text-align: left;
+    color: #616365;
+    overflow: hidden;}
+
+#Timeline .group_4 {
+    width: 228px;
+    height: 41px;
+    left: 114px;
+    top: 96.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .this_all_looks_good_ {
+    width: 228px;
+    height: 21px;
+    left: 114px;
+    top: 30.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Regular";
+    font-size: 14px;
+    text-anchor: middle;
+    inline-size: 228;
+    text-align: left;
+    color: #131517;
+    overflow: hidden;}
+
+#Timeline .notes {
+    width: 183px;
+    height: 18px;
+    left: 91.5px;
+    top: 9px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSansCondensed-Medium";
+    font-size: 14px;
+    text-anchor: middle;
+    inline-size: 183;
+    text-align: left;
+    color: #616365;
+    overflow: hidden;}
+
+#Timeline .badge_warning {
+    width: 86px;
+    height: 24px;
+    left: 43px;
+    top: 12px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_10 {
+    width: 86px;
+    height: 24px;
+    left: 43px;
+    top: 12px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_10-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #147556;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+#Timeline ._px_padding {
+    width: 86px;
+    height: 16px;
+    left: 43px;
+    top: 12px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Medium";
+    font-size: 12px;
+    text-anchor: middle;
+    inline-size: 86;
+    text-align: center;
+    color: #FFFFFF;
+    overflow: hidden;}
+
+#Timeline .button_secondary_small {
+    width: 76px;
+    height: 28px;
+    left: 202px;
+    top: 26.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_1 {
+    width: 76px;
+    height: 28px;
+    left: 38px;
+    top: 14px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_1-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    stroke: #B5B9BD;
+    fill: url(#rectangle_1-fill);
+    stroke-miterlimit: 10;
+}
+#Timeline ._px_padding_1 {
+    width: 76px;
+    height: 18px;
+    left: 38px;
+    top: 14px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Medium";
+    font-size: 14px;
+    text-anchor: middle;
+    inline-size: 76;
+    text-align: center;
+    color: #616365;
+    overflow: hidden;}
+
+#Timeline .line {
+    width: 227px;
+    height: 1px;
+    left: 123px;
+    top: 52px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .line-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    stroke: #DFE3E8;
+    fill: #00000000;
+    stroke-linecap: square;
+    stroke-miterlimit: 10;
+}
+#Timeline .current_status {
+    width: 124px;
+    height: 17.5px;
+    left: 72px;
+    top: 26.75px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Medium";
+    font-size: 14px;
+    text-anchor: middle;
+    inline-size: 124;
+    text-align: left;
+    color: #131517;
+    overflow: hidden;}
+
+#Timeline .group_6 {
+    width: 293px;
+    height: 537px;
+    left: 146.5px;
+    top: 481.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .mask_copy_1 {
+    width: 247px;
+    height: 537px;
+    left: 123.5px;
+    top: 268.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .mask_copy_1-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #FFFFFF;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+#Timeline .line_copy {
+    width: 227px;
+    height: 1px;
+    left: 122px;
+    top: 41px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .line_copy-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    stroke: #DFE3E8;
+    fill: #00000000;
+    stroke-linecap: square;
+    stroke-miterlimit: 10;
+}
+#Timeline .line_copy_2 {
+    width: 227px;
+    height: 1px;
+    left: 122px;
+    top: 136px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .line_copy_2-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    stroke: #DFE3E8;
+    fill: #00000000;
+    stroke-linecap: square;
+    stroke-miterlimit: 10;
+}
+#Timeline .line_copy_3 {
+    width: 227px;
+    height: 1px;
+    left: 122px;
+    top: 234px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .line_copy_3-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    stroke: #DFE3E8;
+    fill: #00000000;
+    stroke-linecap: square;
+    stroke-miterlimit: 10;
+}
+#Timeline .line_copy_4 {
+    width: 227px;
+    height: 1px;
+    left: 122px;
+    top: 430px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .line_copy_4-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    stroke: #DFE3E8;
+    fill: #00000000;
+    stroke-linecap: square;
+    stroke-miterlimit: 10;
+}
+#Timeline .group_2_copy_2 {
+    width: 230px;
+    height: 162px;
+    left: 123px;
+    top: 328px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .group_2_copy_1 {
+    width: 229px;
+    height: 162px;
+    left: 115.5px;
+    top: 81px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .updated_by_aaron_ste_1 {
+    width: 228px;
+    height: 36px;
+    left: 114px;
+    top: 50px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Regular";
+    font-size: 12px;
+    text-anchor: middle;
+    inline-size: 228;
+    text-align: left;
+    color: #616365;
+    overflow: hidden;}
+
+#Timeline .group_3 {
+    width: 228px;
+    height: 81px;
+    left: 114px;
+    top: 121px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .i_ve_attached_all_re {
+    width: 228px;
+    height: 63px;
+    left: 114px;
+    top: 49.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Regular";
+    font-size: 14px;
+    text-anchor: middle;
+    inline-size: 228;
+    text-align: left;
+    color: #131517;
+    overflow: hidden;}
+
+#Timeline .notes_1 {
+    width: 183px;
+    height: 18px;
+    left: 91.5px;
+    top: 9px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSansCondensed-Medium";
+    font-size: 14px;
+    text-anchor: middle;
+    inline-size: 183;
+    text-align: left;
+    color: #616365;
+    overflow: hidden;}
+
+#Timeline .badge_warning_1 {
+    width: 86px;
+    height: 24px;
+    left: 43px;
+    top: 12px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_11 {
+    width: 86px;
+    height: 24px;
+    left: 43px;
+    top: 12px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_11-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #C2E5FF;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+#Timeline ._px_padding_2 {
+    width: 86px;
+    height: 16px;
+    left: 43px;
+    top: 11px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Medium";
+    font-size: 12px;
+    text-anchor: middle;
+    inline-size: 86;
+    text-align: center;
+    color: #131517BF;
+    overflow: hidden;}
+
+#Timeline .history {
+    width: 283px;
+    height: 17.5px;
+    left: 151.5px;
+    top: 21.75px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Medium";
+    font-size: 14px;
+    text-anchor: middle;
+    inline-size: 283;
+    text-align: left;
+    color: #131517;
+    overflow: hidden;}
+
+#Timeline .group_2_copy_3 {
+    width: 229px;
+    height: 66px;
+    left: 123.5px;
+    top: 482px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .group_2_copy_5 {
+    width: 228px;
+    height: 66px;
+    left: 115px;
+    top: 33px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .created_by_aaron_ste {
+    width: 228px;
+    height: 36px;
+    left: 114px;
+    top: 48px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Regular";
+    font-size: 12px;
+    text-anchor: middle;
+    inline-size: 228;
+    text-align: left;
+    color: #616365;
+    overflow: hidden;}
+
+#Timeline .badge_warning_2 {
+    width: 101px;
+    height: 24px;
+    left: 50.5px;
+    top: 12px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_12 {
+    width: 101px;
+    height: 24px;
+    left: 50.5px;
+    top: 12px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_12-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #DFE3E8;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+#Timeline ._px_padding_3 {
+    width: 101px;
+    height: 16px;
+    left: 51px;
+    top: 11px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Medium";
+    font-size: 12px;
+    text-anchor: middle;
+    inline-size: 101;
+    text-align: center;
+    color: #131517BF;
+    overflow: hidden;}
+
+#Timeline .group_2_copy_6 {
+    width: 230px;
+    height: 68px;
+    left: 124px;
+    top: 185px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .group_2_copy_7 {
+    width: 229px;
+    height: 68px;
+    left: 115.5px;
+    top: 34px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .updated_by_aaron_ste_2 {
+    width: 228px;
+    height: 36px;
+    left: 114px;
+    top: 50px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Regular";
+    font-size: 12px;
+    text-anchor: middle;
+    inline-size: 228;
+    text-align: left;
+    color: #616365;
+    overflow: hidden;}
+
+#Timeline .badge_warning_3 {
+    width: 114px;
+    height: 24px;
+    left: 57px;
+    top: 12px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_13 {
+    width: 114px;
+    height: 24px;
+    left: 57px;
+    top: 12px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_13-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #FFCF99;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+#Timeline ._px_padding_4 {
+    width: 114px;
+    height: 16px;
+    left: 57px;
+    top: 11px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Medium";
+    font-size: 12px;
+    text-anchor: middle;
+    inline-size: 114;
+    text-align: center;
+    color: #131517BF;
+    overflow: hidden;}
+
+#Timeline .group_2_copy_8 {
+    width: 229px;
+    height: 68px;
+    left: 124.5px;
+    top: 87px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .updated_by_aaron_ste_3 {
+    width: 228px;
+    height: 36px;
+    left: 114px;
+    top: 50px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Regular";
+    font-size: 12px;
+    text-anchor: middle;
+    inline-size: 228;
+    text-align: left;
+    color: #616365;
+    overflow: hidden;}
+
+#Timeline .badge_warning_4 {
+    width: 73px;
+    height: 24px;
+    left: 36.5px;
+    top: 12px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_14 {
+    width: 73px;
+    height: 24px;
+    left: 36.5px;
+    top: 12px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_14-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #FFCF99;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+#Timeline ._px_padding_5 {
+    width: 73px;
+    height: 16px;
+    left: 37px;
+    top: 11px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Medium";
+    font-size: 12px;
+    text-anchor: middle;
+    inline-size: 73;
+    text-align: center;
+    color: #131517BF;
+    overflow: hidden;}
+
+
+#Timeline .icon_arrow_chevron_left {
+    width: 16px;
+    height: 16px;
+    left: 333px;
+    top: 103.47px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .mask_2 {
+    width: 10px;
+    height: 16px;
+    left: 8px;
+    top: 8px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .mask_2-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #000000;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+#Timeline .color_primary_selection {
+    width: 16px;
+    height: 16px;
+    left: 8px;
+    top: 8px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+
+#Timeline .group_7 {
+    width: 185px;
+    height: 38px;
+    left: 181.5px;
+    top: 103.47px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_9 {
+    width: 96px;
+    height: 38px;
+    left: 137px;
+    top: 19px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_9-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #1F76D8;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+#Timeline .reviews {
+    width: 66px;
+    height: 24px;
+    left: 138px;
+    top: 18px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Medium";
+    font-size: 16px;
+    text-anchor: middle;
+    inline-size: 66;
+    text-align: center;
+    color: #FFFFFF;
+    overflow: hidden;}
+
+#Timeline .balance {
+    width: 76px;
+    height: 24px;
+    left: 38px;
+    top: 20px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    font-family: "BentonSans-Medium";
+    font-size: 16px;
+    text-anchor: middle;
+    inline-size: 76;
+    text-align: center;
+    color: #616365;
+    overflow: hidden;}
+
+
+#Timeline .group_2 {
+    width: 574px;
+    height: 67px;
+    left: 1174px;
+    top: 32.97px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .bitmap_2 {
+    width: 392px;
+    height: 67px;
+    left: 378px;
+    top: 33.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+    background-image: url(../img/Bitmap_1.png);
+    background-size:  100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;}
+
+#Timeline .rectangle_2 {
+    width: 195px;
+    height: 41px;
+    left: 97.5px;
+    top: 35.5px;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #00000000;
+    overflow: visible;
+}
+
+#Timeline .rectangle_2-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #FFFFFF;
+    stroke-miterlimit: 10;
+    stroke-width: 0px;
+}
+
+path {
+    fill-rule: evenodd; 
+}
+
+svg {
+   overflow: visible;
+}
